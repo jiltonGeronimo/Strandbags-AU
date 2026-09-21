@@ -1,0 +1,2515 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: Minicart.spec.js >> Minicart Undo Feature
+- Location: tests/Minicart.spec.js:58:5
+
+# Error details
+
+```
+Error: expect(received).toEqual(expected) // deep equality
+
+Expected: "1"
+Received: 2
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=f151e1]:
+  - link "Skip to content" [ref=f151e2] [cursor=pointer]:
+    - /url: "#MainContent"
+  - generic [ref=f151e5]:
+    - generic [ref=f151e7]:
+      - link "SALE & TRAVEL DEALS UP TO 50% OFF* | SHOP NOW" [ref=f151e9] [cursor=pointer]:
+        - /url: /collections/sale-travel-deals
+        - paragraph [ref=f151e10]:
+          - text: SALE & TRAVEL DEALS UP TO 50% OFF* |
+          - generic [ref=f151e11]: SHOP NOW
+      - link "UP TO 40% OFF* TRAVEL | SHOP NOW" [ref=f151e13] [cursor=pointer]:
+        - /url: /collections/travel
+        - paragraph [ref=f151e14]:
+          - text: UP TO 40% OFF* TRAVEL |
+          - generic [ref=f151e15]: SHOP NOW
+      - link "STRAND+ $30 OFF LEATHER & GUESS | LEARN MORE" [ref=f151e17] [cursor=pointer]:
+        - /url: /pages/competition-terms-conditions
+        - paragraph [ref=f151e18]:
+          - text: STRAND+ $30 OFF LEATHER & GUESS |
+          - generic [ref=f151e19]: LEARN MORE
+    - button "" [ref=f151e20] [cursor=pointer]
+  - banner [ref=f151e22]:
+    - generic [ref=f151e23]:
+      - generic [ref=f151e26]:
+        - generic [ref=f151e27]:
+          - generic [ref=f151e28]:
+            - link "Strandbags":
+              - /url: /
+              - img "Strandbags" [ref=f151e29] [cursor=pointer]
+            - generic [ref=f151e30]: Strandbags
+          - navigation [ref=f151e31]:
+            - menu [ref=f151e32]:
+              - menuitem "Store Locator" [ref=f151e34] [cursor=pointer]
+              - menuitem "Help Center" [ref=f151e37] [cursor=pointer]
+              - menuitem "Wishlist" [ref=f151e40] [cursor=pointer]
+            - menu [ref=f151e42]:
+              - button "Search" [ref=f151e43] [cursor=pointer]
+              - menuitem "Account" [ref=f151e45] [cursor=pointer]
+              - link "2" [ref=f151e47] [cursor=pointer]:
+                - /url: /cart
+        - menu [ref=f151e51]:
+          - menuitem "Sale & Travel Deals" [ref=f151e53] [cursor=pointer]
+          - menuitem "New Arrivals" [ref=f151e54] [cursor=pointer]
+          - menuitem "Travel" [ref=f151e55] [cursor=pointer]
+          - menuitem "Bags" [ref=f151e56] [cursor=pointer]
+          - menuitem "Accessories" [ref=f151e57] [cursor=pointer]
+      - generic: 
+      - generic [ref=f151e59]:
+        - generic [ref=f151e60]:
+          - button "Continue Shopping" [ref=f151e61] [cursor=pointer]
+          - generic [ref=f151e63]: Bag
+        - generic [ref=f151e64]:
+          - generic [ref=f151e66]:
+            - generic [ref=f151e67]: 
+            - generic [ref=f151e68]: You are eligible for free shipping*!
+          - generic [ref=f151e69]:
+            - link [ref=f151e71] [cursor=pointer]:
+              - /url: /products/nere-stori-check-in-75cm-suitcase-3204720?variant=44020185989278
+              - img "Stori Check-In 75cm Suitcase" [ref=f151e72]
+            - generic [ref=f151e73]:
+              - generic [ref=f151e74]:
+                - generic [ref=f151e75]: Nere
+                - button "Remove" [ref=f151e76] [cursor=pointer]
+              - link "Stori Check-In 75cm Suitcase" [ref=f151e80] [cursor=pointer]:
+                - /url: /products/nere-stori-check-in-75cm-suitcase-3204720?variant=44020185989278
+              - generic [ref=f151e82]:
+                - generic [ref=f151e83]: $161.40
+                - generic [ref=f151e84]: $134.50
+              - generic [ref=f151e86]:
+                - generic [ref=f151e87]: "Colour:"
+                - generic [ref=f151e88]: Black
+              - generic [ref=f151e89]:
+                - button [ref=f151e90] [cursor=pointer]
+                - generic [ref=f151e94]:
+                  - generic [ref=f151e95]: "Quantity:"
+                  - generic [ref=f151e96]:
+                    - link "-" [ref=f151e97] [cursor=pointer]:
+                      - /url: "javascript:"
+                    - spinbutton [ref=f151e98]: "1"
+                    - link "+" [ref=f151e99] [cursor=pointer]:
+                      - /url: "javascript:"
+          - generic [ref=f151e100]:
+            - link [ref=f151e102] [cursor=pointer]:
+              - /url: /products/nere-stori-check-in-75cm-suitcase-3227450?variant=46380135022750
+              - img "Stori Check-In 75cm Suitcase" [ref=f151e103]
+            - generic [ref=f151e104]:
+              - generic [ref=f151e105]:
+                - generic [ref=f151e106]: Nere
+                - button "Remove" [ref=f151e107] [cursor=pointer]
+              - link "Stori Check-In 75cm Suitcase" [ref=f151e111] [cursor=pointer]:
+                - /url: /products/nere-stori-check-in-75cm-suitcase-3227450?variant=46380135022750
+              - generic [ref=f151e113]:
+                - generic [ref=f151e114]: $161.40
+                - generic [ref=f151e115]: $134.50
+              - generic [ref=f151e117]:
+                - generic [ref=f151e118]: "Colour:"
+                - generic [ref=f151e119]: Bright Lilac
+              - generic [ref=f151e120]:
+                - button [ref=f151e121] [cursor=pointer]
+                - generic [ref=f151e125]:
+                  - generic [ref=f151e126]: "Quantity:"
+                  - generic [ref=f151e127]:
+                    - link "-" [ref=f151e128] [cursor=pointer]:
+                      - /url: "javascript:"
+                    - spinbutton [ref=f151e129]: "1"
+                    - link "+" [ref=f151e130] [cursor=pointer]:
+                      - /url: "javascript:"
+          - generic [ref=f151e134]:
+            - generic [ref=f151e135]:
+              - generic [ref=f151e136]: You removed
+              - generic [ref=f151e137]: Stori Check-In 75cm Suitcase
+            - button "Undo" [disabled] [ref=f151e138]
+        - generic [ref=f151e143]:
+          - generic [ref=f151e144]:
+            - generic [ref=f151e145]: "SUBTOTAL:"
+            - generic [ref=f151e146]: $269.00
+          - generic [ref=f151e147]: Or, 4 payments of 67.25 AUD with
+          - link "PROCEED TO CHECKOUT" [ref=f151e150] [cursor=pointer]:
+            - /url: /checkout
+          - link "GO TO BAG" [ref=f151e151] [cursor=pointer]:
+            - /url: /cart
+          - generic [ref=f151e152]:
+            - text: Get 10% off when you
+            - link "sign up" [ref=f151e153] [cursor=pointer]:
+              - /url: /account/register
+            - text: as a rewards member.*
+        - generic [ref=f151e154]:
+          - heading "YOU MAY ALSO LIKE" [level=2] [ref=f151e156]
+          - generic [ref=f151e159]:
+            - generic [ref=f151e164]:
+              - link [ref=f151e165] [cursor=pointer]:
+                - /url: /products/nere-stori-check-in-75cm-suitcase-3212099
+                - generic [ref=f151e166]:
+                  - img "Stori Check-In 75cm Suitcase" [ref=f151e167]
+                  - img "Stori Check-In 75cm Suitcase" [ref=f151e168]
+                  - button "Add To Bag" [ref=f151e170]
+              - generic [ref=f151e172]:
+                - generic [ref=f151e173]: Nere
+                - link [ref=f151e175] [cursor=pointer]:
+                  - /url: /products/nere-stori-check-in-75cm-suitcase-3212099
+                  - heading "Stori Check-In 75cm Suitcase" [level=3] [ref=f151e176]
+              - generic [ref=f151e179]:
+                - generic [ref=f151e180]: $269.00
+                - generic [ref=f151e181]: $161.40
+                - generic [ref=f151e182]: $134.50
+            - generic [ref=f151e187]:
+              - link [ref=f151e188] [cursor=pointer]:
+                - /url: /products/nere-stori-check-in-75cm-suitcase-3208386
+                - generic [ref=f151e189]:
+                  - img "Stori Check-In 75cm Suitcase" [ref=f151e190]
+                  - img "Stori Check-In 75cm Suitcase" [ref=f151e191]
+                  - button "Add To Bag" [ref=f151e193]
+              - generic [ref=f151e195]:
+                - generic [ref=f151e196]: Nere
+                - link [ref=f151e198] [cursor=pointer]:
+                  - /url: /products/nere-stori-check-in-75cm-suitcase-3208386
+                  - heading "Stori Check-In 75cm Suitcase" [level=3] [ref=f151e199]
+              - generic [ref=f151e202]:
+                - generic [ref=f151e203]: $269.00
+                - generic [ref=f151e204]: $161.40
+            - generic [ref=f151e209]:
+              - link [ref=f151e210] [cursor=pointer]:
+                - /url: /products/nere-stori-check-in-75cm-suitcase-3225896
+                - generic [ref=f151e211]:
+                  - img "Stori Check-In 75cm Suitcase" [ref=f151e212]
+                  - img "Stori Check-In 75cm Suitcase" [ref=f151e213]
+                  - button "Add To Bag" [ref=f151e215]
+              - generic [ref=f151e217]:
+                - generic [ref=f151e218]: Nere
+                - link [ref=f151e220] [cursor=pointer]:
+                  - /url: /products/nere-stori-check-in-75cm-suitcase-3225896
+                  - heading "Stori Check-In 75cm Suitcase" [level=3] [ref=f151e221]
+              - generic [ref=f151e224]:
+                - generic [ref=f151e225]: $269.00
+                - generic [ref=f151e226]: $161.40
+            - generic [ref=f151e231]:
+              - link [ref=f151e232] [cursor=pointer]:
+                - /url: /products/nere-stori-check-in-75cm-suitcase-3225888
+                - generic [ref=f151e233]:
+                  - img "Stori Check-In 75cm Suitcase" [ref=f151e234]
+                  - img "Stori Check-In 75cm Suitcase" [ref=f151e235]
+                  - button "Add To Bag" [ref=f151e237]
+              - generic [ref=f151e239]:
+                - generic [ref=f151e240]: Nere
+                - link [ref=f151e242] [cursor=pointer]:
+                  - /url: /products/nere-stori-check-in-75cm-suitcase-3225888
+                  - heading "Stori Check-In 75cm Suitcase" [level=3] [ref=f151e243]
+              - generic [ref=f151e246]:
+                - generic [ref=f151e247]: $269.00
+                - generic [ref=f151e248]: $161.40
+            - generic [ref=f151e253]:
+              - link [ref=f151e254] [cursor=pointer]:
+                - /url: /products/nere-stori-check-in-75cm-suitcase-3227458
+                - generic [ref=f151e255]:
+                  - img "Stori Check-In 75cm Suitcase" [ref=f151e256]
+                  - img "Stori Check-In 75cm Suitcase" [ref=f151e257]
+                  - button "Add To Bag" [ref=f151e259]
+              - generic [ref=f151e261]:
+                - generic [ref=f151e262]: Nere
+                - link [ref=f151e264] [cursor=pointer]:
+                  - /url: /products/nere-stori-check-in-75cm-suitcase-3227458
+                  - heading "Stori Check-In 75cm Suitcase" [level=3] [ref=f151e265]
+              - generic [ref=f151e268]:
+                - generic [ref=f151e269]: $269.00
+                - generic [ref=f151e270]: $161.40
+            - generic [ref=f151e275]:
+              - link [ref=f151e276] [cursor=pointer]:
+                - /url: /products/nere-packing-cubes-5-pack-3213130
+                - generic [ref=f151e277]:
+                  - img "Packing Cubes 5 Pack" [ref=f151e278]
+                  - img "Packing Cubes 5 Pack" [ref=f151e279]
+                  - button "Add To Bag" [ref=f151e281]
+              - generic [ref=f151e283]:
+                - generic [ref=f151e284]: Nere
+                - link [ref=f151e286] [cursor=pointer]:
+                  - /url: /products/nere-packing-cubes-5-pack-3213130
+                  - heading "Packing Cubes 5 Pack" [level=3] [ref=f151e287]
+              - generic [ref=f151e290]:
+                - generic [ref=f151e291]: $39.99
+                - generic [ref=f151e292]: $23.99
+                - generic [ref=f151e293]: $19.99
+            - generic [ref=f151e298]:
+              - link [ref=f151e299] [cursor=pointer]:
+                - /url: /products/nere-stori-check-in-75cm-suitcase-3225884
+                - generic [ref=f151e300]:
+                  - img "Stori Check-In 75cm Suitcase" [ref=f151e301]
+                  - img "Stori Check-In 75cm Suitcase" [ref=f151e302]
+                  - button "Add To Bag" [ref=f151e304]
+              - generic [ref=f151e306]:
+                - generic [ref=f151e307]: Nere
+                - link [ref=f151e309] [cursor=pointer]:
+                  - /url: /products/nere-stori-check-in-75cm-suitcase-3225884
+                  - heading "Stori Check-In 75cm Suitcase" [level=3] [ref=f151e310]
+              - generic [ref=f151e313]:
+                - generic [ref=f151e314]: $269.00
+                - generic [ref=f151e315]: $161.40
+            - generic [ref=f151e320]:
+              - link [ref=f151e321] [cursor=pointer]:
+                - /url: /products/nere-suitcase-cover-3227509
+                - generic [ref=f151e322]:
+                  - img "Suitcase Cover" [ref=f151e323]
+                  - img "Suitcase Cover" [ref=f151e324]
+                  - button "Add To Bag" [ref=f151e326]
+              - generic [ref=f151e328]:
+                - generic [ref=f151e329]: Nere
+                - link [ref=f151e331] [cursor=pointer]:
+                  - /url: /products/nere-suitcase-cover-3227509
+                  - heading "Suitcase Cover" [level=3] [ref=f151e332]
+              - generic [ref=f151e333]: $29.99
+            - generic [ref=f151e341]:
+              - link [ref=f151e342] [cursor=pointer]:
+                - /url: /products/nere-luggage-strap-3227507
+                - generic [ref=f151e343]:
+                  - img "Luggage Strap" [ref=f151e344]
+                  - button "Add To Bag" [ref=f151e346]
+              - generic [ref=f151e348]:
+                - generic [ref=f151e349]: Nere
+                - link [ref=f151e351] [cursor=pointer]:
+                  - /url: /products/nere-luggage-strap-3227507
+                  - heading "Luggage Strap" [level=3] [ref=f151e352]
+              - generic [ref=f151e353]: $9.99
+            - generic [ref=f151e361]:
+              - link [ref=f151e362] [cursor=pointer]:
+                - /url: /products/nere-stori-carry-on-55cm-suitcase-3212101
+                - generic [ref=f151e363]:
+                  - img "Stori Carry-On 55cm Suitcase" [ref=f151e364]
+                  - img "Stori Carry-On 55cm Suitcase" [ref=f151e365]
+                  - button "Add To Bag" [ref=f151e367]
+              - generic [ref=f151e369]:
+                - generic [ref=f151e370]: Nere
+                - link [ref=f151e372] [cursor=pointer]:
+                  - /url: /products/nere-stori-carry-on-55cm-suitcase-3212101
+                  - heading "Stori Carry-On 55cm Suitcase" [level=3] [ref=f151e373]
+              - generic [ref=f151e376]:
+                - generic [ref=f151e377]: $219.00
+                - generic [ref=f151e378]: $131.40
+                - generic [ref=f151e379]: $109.50
+            - generic [ref=f151e384]:
+              - link "Luggage Strap Add To Bag" [ref=f151e385] [cursor=pointer]:
+                - /url: /products/nere-luggage-strap-3207553
+                - generic [ref=f151e386]:
+                  - img "Luggage Strap" [ref=f151e387]
+                  - button "Add To Bag" [ref=f151e391]
+              - generic [ref=f151e393]:
+                - generic [ref=f151e394]: Nere
+                - link [ref=f151e396] [cursor=pointer]:
+                  - /url: /products/nere-luggage-strap-3207553
+                  - heading "Luggage Strap" [level=3] [ref=f151e397]
+              - generic [ref=f151e398]: $9.99
+            - generic [ref=f151e406]:
+              - link [ref=f151e407] [cursor=pointer]:
+                - /url: /products/nere-silicone-passport-cover-3211412
+                - generic [ref=f151e408]:
+                  - img "Silicone Passport Cover" [ref=f151e409]
+                  - img "Silicone Passport Cover" [ref=f151e410]
+                  - button "Add To Bag" [ref=f151e412]
+              - generic [ref=f151e414]:
+                - generic [ref=f151e415]: Nere
+                - link [ref=f151e417] [cursor=pointer]:
+                  - /url: /products/nere-silicone-passport-cover-3211412
+                  - heading "Silicone Passport Cover" [level=3] [ref=f151e418]
+              - generic [ref=f151e421]:
+                - generic [ref=f151e422]: $9.99
+                - generic [ref=f151e423]: $6.99
+                - generic [ref=f151e424]: $4.99
+            - generic [ref=f151e429]:
+              - link "Luggage Strap Add To Bag" [ref=f151e430] [cursor=pointer]:
+                - /url: /products/nere-luggage-strap-3210803
+                - generic [ref=f151e431]:
+                  - img "Luggage Strap" [ref=f151e432]
+                  - button "Add To Bag" [ref=f151e436]
+              - generic [ref=f151e438]:
+                - generic [ref=f151e439]: Nere
+                - link [ref=f151e441] [cursor=pointer]:
+                  - /url: /products/nere-luggage-strap-3210803
+                  - heading "Luggage Strap" [level=3] [ref=f151e442]
+              - generic [ref=f151e443]: $9.99
+            - generic [ref=f151e451]:
+              - link [ref=f151e452] [cursor=pointer]:
+                - /url: /products/nere-stori-check-in-65cm-suitcase-3212100
+                - generic [ref=f151e453]:
+                  - img "Stori Check-In 65cm Suitcase" [ref=f151e454]
+                  - img "Stori Check-In 65cm Suitcase" [ref=f151e455]
+                  - button "Add To Bag" [ref=f151e457]
+              - generic [ref=f151e459]:
+                - generic [ref=f151e460]: Nere
+                - link [ref=f151e462] [cursor=pointer]:
+                  - /url: /products/nere-stori-check-in-65cm-suitcase-3212100
+                  - heading "Stori Check-In 65cm Suitcase" [level=3] [ref=f151e463]
+              - generic [ref=f151e466]:
+                - generic [ref=f151e467]: $259.00
+                - generic [ref=f151e468]: $155.40
+                - generic [ref=f151e469]: $129.50
+            - generic [ref=f151e474]:
+              - link [ref=f151e475] [cursor=pointer]:
+                - /url: /products/nere-silicone-passport-cover-3211414
+                - generic [ref=f151e476]:
+                  - img "Silicone Passport Cover" [ref=f151e477]
+                  - img "Silicone Passport Cover" [ref=f151e478]
+                  - button "Add To Bag" [ref=f151e480]
+              - generic [ref=f151e482]:
+                - generic [ref=f151e483]: Nere
+                - link [ref=f151e485] [cursor=pointer]:
+                  - /url: /products/nere-silicone-passport-cover-3211414
+                  - heading "Silicone Passport Cover" [level=3] [ref=f151e486]
+              - generic [ref=f151e489]:
+                - generic [ref=f151e490]: $9.99
+                - generic [ref=f151e491]: $6.99
+                - generic [ref=f151e492]: $4.99
+            - generic [ref=f151e497]:
+              - link [ref=f151e498] [cursor=pointer]:
+                - /url: /products/aya-gia-rfid-pocket-nylon-sling-bag-3216326
+                - generic [ref=f151e499]:
+                  - img "Gia RFID Pocket Nylon Sling Bag" [ref=f151e500]
+                  - img "Gia RFID Pocket Nylon Sling Bag" [ref=f151e501]
+                  - button "Add To Bag" [ref=f151e503]
+              - generic [ref=f151e505]:
+                - generic [ref=f151e506]: AYA
+                - link [ref=f151e508] [cursor=pointer]:
+                  - /url: /products/aya-gia-rfid-pocket-nylon-sling-bag-3216326
+                  - heading "Gia RFID Pocket Nylon Sling Bag" [level=3] [ref=f151e509]
+              - generic [ref=f151e512]:
+                - generic [ref=f151e513]: $59.99
+                - generic [ref=f151e514]: $41.99
+                - generic [ref=f151e515]: $34.00
+  - generic [ref=f151e520]:
+    - link [ref=f151e522] [cursor=pointer]:
+      - /url: /pages/deliveries-and-returns
+      - paragraph [ref=f151e523]: NEED IT FAST? TRY 3-HOUR CLICK & COLLECT*
+    - link [ref=f151e525] [cursor=pointer]:
+      - /url: /collections/new-in
+      - paragraph [ref=f151e526]: ENJOY FREE DELIVERY* ON ORDERS $99+
+    - link [ref=f151e528] [cursor=pointer]:
+      - /url: /pages/price-match-policy
+      - paragraph [ref=f151e529]: SEEN IT FOR LESS? WE WILL PRICE MATCH*
+  - main [ref=f151e530]:
+    - article [ref=f151e531]:
+      - navigation "breadcrumb" [ref=f151e534]:
+        - list [ref=f151e535]:
+          - listitem [ref=f151e536]:
+            - link "Home" [ref=f151e537] [cursor=pointer]:
+              - /url: https://www.strandbags.com.au
+          - listitem [ref=f151e538]:
+            - text: /
+            - generic [ref=f151e539]: Stori Check-In 75cm Suitcase
+      - generic [ref=f151e542]:
+        - generic [ref=f151e544]:
+          - generic [ref=f151e548]:
+            - generic:
+              - generic:
+                - generic: 50% OFF | TRAVEL DEALS
+                - generic: FINAL DAYS
+          - generic [ref=f151e595]:
+            - generic [ref=f151e596]:
+              - link "Nere" [ref=f151e597] [cursor=pointer]:
+                - /url: /collections/nere
+              - generic [ref=f151e599]:
+                - generic [ref=f151e600] [cursor=pointer]
+                - button "4.7 out 5 stars rating in total 342 reviews. Summary reviews." [ref=f151e604] [cursor=pointer]:
+                  - generic [ref=f151e612]: ( 342 Reviews )
+            - heading "Stori Check-In 75cm Suitcase" [level=1] [ref=f151e614]
+            - generic [ref=f151e617]:
+              - generic [ref=f151e618]: $269.00
+              - generic [ref=f151e619]: $161.40
+              - generic [ref=f151e620]: $134.50
+            - generic [ref=f151e621]:
+              - generic [ref=f151e622]:
+                - generic [ref=f151e623]: "Colour:"
+                - generic [ref=f151e624]: Black
+              - list [ref=f151e625]:
+                - listitem [ref=f151e626]:
+                  - link "Black" [ref=f151e627] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3204720
+                - listitem [ref=f151e628]:
+                  - link "Black" [ref=f151e629] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3227442
+                - listitem [ref=f151e630]:
+                  - link "Navy" [ref=f151e631] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3212099
+                - listitem [ref=f151e632]:
+                  - link "Chocolate" [ref=f151e633] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3225896
+                - listitem [ref=f151e634]:
+                  - link "Mocha" [ref=f151e635] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3225884
+                - listitem [ref=f151e636]:
+                  - link "Eucalyptus" [ref=f151e637] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3230373
+                - listitem [ref=f151e638]:
+                  - link "Bright Lilac" [ref=f151e639] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3227450
+                - listitem [ref=f151e640]:
+                  - link "Acid Green" [ref=f151e641] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3228914
+                - listitem [ref=f151e642]:
+                  - link "Orange" [ref=f151e643] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3227458
+                - listitem [ref=f151e644]:
+                  - link "Watermelon" [ref=f151e645] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3228910
+                - listitem [ref=f151e646]:
+                  - link "Pop/Pink" [ref=f151e647] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3228906
+                - listitem [ref=f151e648]:
+                  - link "Orchid Pink" [ref=f151e649] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3208386
+                - listitem [ref=f151e650]:
+                  - link "Sand" [ref=f151e651] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3225888
+            - generic [ref=f151e652]:
+              - 'button "Size: Check-In-Large 75cm" [ref=f151e654] [cursor=pointer]':
+                - generic [ref=f151e655]: "Size:"
+                - generic [ref=f151e656]:
+                  - generic [ref=f151e657]: Check-In-Large
+                  - generic [ref=f151e658]: 75cm
+              - button [ref=f151e659] [cursor=pointer]
+            - list
+            - generic [ref=f151e663]:
+              - generic [ref=f151e664]: $134.50
+              - paragraph [ref=f151e666]:
+                - generic [ref=f151e667]:
+                  - text: or 4 interest-free payments of
+                  - strong [ref=f151e668]: $33.63
+                  - text: with
+                - generic [ref=f151e669]:
+                  - button "Afterpay logo - Opens a dialog" [ref=f151e670] [cursor=pointer]
+                  - button "Learn More about Afterpay - Opens a dialog" [ref=f151e682] [cursor=pointer]:
+                    - generic [ref=f151e683]: ⓘ
+            - generic [ref=f151e685]:
+              - button "Add To Bag" [ref=f151e686] [cursor=pointer]
+              - link "Add To Wishlist" [ref=f151e688] [cursor=pointer]:
+                - /url: javascript:void(0);
+            - generic [ref=f151e689]:
+              - text: Get
+              - link "10% off*" [ref=f151e690] [cursor=pointer]:
+                - /url: /pages/terms-and-conditions
+              - text: when you
+              - link "sign up" [ref=f151e691] [cursor=pointer]:
+                - /url: /account/register
+              - text: as a rewards member.
+            - generic:
+              - paragraph
+            - generic [ref=f151e692]:
+              - heading "PAIR IT WITH" [level=2] [ref=f151e694]
+              - generic [ref=f151e697]:
+                - generic [ref=f151e702]:
+                  - link [ref=f151e703] [cursor=pointer]:
+                    - /url: /products/nere-slim-luggage-tag-3206027
+                    - generic [ref=f151e704]:
+                      - img "Slim Luggage Tag" [ref=f151e705]
+                      - img "Slim Luggage Tag" [ref=f151e706]
+                      - button "Add To Bag" [ref=f151e708]
+                  - generic [ref=f151e710]:
+                    - generic [ref=f151e711]: Nere
+                    - link [ref=f151e713] [cursor=pointer]:
+                      - /url: /products/nere-slim-luggage-tag-3206027
+                      - heading "Slim Luggage Tag" [level=3] [ref=f151e714]
+                  - generic [ref=f151e715]: $4.99
+                - generic [ref=f151e723]:
+                  - link [ref=f151e724] [cursor=pointer]:
+                    - /url: /products/nere-silicone-passport-cover-3211412
+                    - generic [ref=f151e725]:
+                      - img "Silicone Passport Cover" [ref=f151e726]
+                      - img "Silicone Passport Cover" [ref=f151e727]
+                      - button "Add To Bag" [ref=f151e729]
+                  - generic [ref=f151e731]:
+                    - generic [ref=f151e732]: Nere
+                    - link [ref=f151e734] [cursor=pointer]:
+                      - /url: /products/nere-silicone-passport-cover-3211412
+                      - heading "Silicone Passport Cover" [level=3] [ref=f151e735]
+                  - generic [ref=f151e738]:
+                    - generic [ref=f151e739]: $9.99
+                    - generic [ref=f151e740]: $6.99
+                    - generic [ref=f151e741]: $4.99
+                - generic [ref=f151e746]:
+                  - link [ref=f151e747] [cursor=pointer]:
+                    - /url: /products/nere-stori-3-pack-packing-cube-3206127
+                    - generic [ref=f151e748]:
+                      - img "Stori 3 Pack Packing Cube" [ref=f151e749]
+                      - img "Stori 3 Pack Packing Cube" [ref=f151e750]
+                      - button "Add To Bag" [ref=f151e752]
+                  - generic [ref=f151e754]:
+                    - generic [ref=f151e755]: Nere
+                    - link [ref=f151e757] [cursor=pointer]:
+                      - /url: /products/nere-stori-3-pack-packing-cube-3206127
+                      - heading "Stori 3 Pack Packing Cube" [level=3] [ref=f151e758]
+                  - generic [ref=f151e759]: $24.99
+                - generic [ref=f151e767]:
+                  - link [ref=f151e768] [cursor=pointer]:
+                    - /url: /products/nere-packing-cubes-5-pack-3213130
+                    - generic [ref=f151e769]:
+                      - img "Packing Cubes 5 Pack" [ref=f151e770]
+                      - img "Packing Cubes 5 Pack" [ref=f151e771]
+                      - button "Add To Bag" [ref=f151e773]
+                  - generic [ref=f151e775]:
+                    - generic [ref=f151e776]: Nere
+                    - link [ref=f151e778] [cursor=pointer]:
+                      - /url: /products/nere-packing-cubes-5-pack-3213130
+                      - heading "Packing Cubes 5 Pack" [level=3] [ref=f151e779]
+                  - generic [ref=f151e782]:
+                    - generic [ref=f151e783]: $39.99
+                    - generic [ref=f151e784]: $23.99
+                    - generic [ref=f151e785]: $19.99
+                - generic [ref=f151e790]:
+                  - link [ref=f151e791] [cursor=pointer]:
+                    - /url: /products/nere-stori-vanity-case-3204724
+                    - generic [ref=f151e792]:
+                      - img "Stori Vanity Case" [ref=f151e793]
+                      - img "Stori Vanity Case" [ref=f151e794]
+                      - button "Add To Bag" [ref=f151e796]
+                  - generic [ref=f151e798]:
+                    - generic [ref=f151e799]: Nere
+                    - link [ref=f151e801] [cursor=pointer]:
+                      - /url: /products/nere-stori-vanity-case-3204724
+                      - heading "Stori Vanity Case" [level=3] [ref=f151e802]
+                  - generic [ref=f151e803]: $79.99
+                - generic [ref=f151e811]:
+                  - link "Luggage Strap Add To Bag" [ref=f151e812] [cursor=pointer]:
+                    - /url: /products/nere-luggage-strap-3207553
+                    - generic [ref=f151e813]:
+                      - img "Luggage Strap" [ref=f151e814]
+                      - button "Add To Bag" [ref=f151e818]
+                  - generic [ref=f151e820]:
+                    - generic [ref=f151e821]: Nere
+                    - link [ref=f151e823] [cursor=pointer]:
+                      - /url: /products/nere-luggage-strap-3207553
+                      - heading "Luggage Strap" [level=3] [ref=f151e824]
+                  - generic [ref=f151e825]: $9.99
+                - generic [ref=f151e833]:
+                  - link [ref=f151e834] [cursor=pointer]:
+                    - /url: /products/nere-two-ways-luggage-strap-3210025
+                    - generic [ref=f151e835]:
+                      - img "Two Ways Luggage Strap" [ref=f151e836]
+                      - img "Two Ways Luggage Strap" [ref=f151e837]
+                      - button "Add To Bag" [ref=f151e839]
+                  - generic [ref=f151e841]:
+                    - generic [ref=f151e842]: Nere
+                    - link [ref=f151e844] [cursor=pointer]:
+                      - /url: /products/nere-two-ways-luggage-strap-3210025
+                      - heading "Two Ways Luggage Strap" [level=3] [ref=f151e845]
+                  - generic [ref=f151e846]: $19.99
+            - generic [ref=f151e852]:
+              - heading "Delivery & Collection Options" [level=3] [ref=f151e853]
+              - paragraph [ref=f151e854]: Please enter your postcode to check the delivery and collection options. Make your selection as you proceed through the checkout.
+              - generic [ref=f151e855]:
+                - textbox "Postcode" [ref=f151e857]
+                - button "Submit" [ref=f151e858] [cursor=pointer]
+              - generic [ref=f151e860] [cursor=pointer]:
+                - heading "Delivery" [level=4] [ref=f151e862]
+                - generic [ref=f151e863]: 
+              - generic [ref=f151e865] [cursor=pointer]:
+                - heading "Click & Collect" [level=4] [ref=f151e867]
+                - generic [ref=f151e868]: 
+              - generic [ref=f151e870] [cursor=pointer]:
+                - heading "Product Information" [level=4] [ref=f151e872]
+                - generic [ref=f151e873]: 
+              - generic [ref=f151e875] [cursor=pointer]:
+                - heading "Key Features" [level=4] [ref=f151e877]
+                - generic [ref=f151e878]: 
+        - generic [ref=f151e879]:
+          - heading "RECOMMENDED" [level=2] [ref=f151e881]
+          - generic [ref=f151e884]:
+            - generic [ref=f151e889]:
+              - link [ref=f151e890] [cursor=pointer]:
+                - /url: /products/nere-stori-check-in-75cm-suitcase-3212099
+                - generic [ref=f151e891]:
+                  - img "Stori Check-In 75cm Suitcase" [ref=f151e892]
+                  - img "Stori Check-In 75cm Suitcase" [ref=f151e893]
+                  - generic:
+                    - generic:
+                      - generic: 50% OFF | TRAVEL DEALS
+                      - generic: FINAL DAYS
+                  - generic [ref=f151e894]:
+                    - button "Add To Bag" [ref=f151e895]
+                    - button "Compare" [ref=f151e897]
+              - generic [ref=f151e898]:
+                - generic [ref=f151e899]:
+                  - generic [ref=f151e900]: Nere
+                  - button [ref=f151e901] [cursor=pointer]
+                - link [ref=f151e903] [cursor=pointer]:
+                  - /url: /products/nere-stori-check-in-75cm-suitcase-3212099
+                  - heading "Stori Check-In 75cm Suitcase" [level=3] [ref=f151e904]
+              - generic [ref=f151e907]:
+                - generic [ref=f151e908]: $269.00
+                - generic [ref=f151e909]: $161.40
+                - generic [ref=f151e910]: $134.50
+              - list [ref=f151e911]:
+                - listitem [ref=f151e912]:
+                  - link [ref=f151e913] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3204720
+                - listitem [ref=f151e914]:
+                  - link [ref=f151e915] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3227442
+                - listitem [ref=f151e916]:
+                  - link [ref=f151e917] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3212099
+                - listitem [ref=f151e918]:
+                  - link [ref=f151e919] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3225896
+                - listitem [ref=f151e920]:
+                  - link [ref=f151e921] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3225884
+                - listitem [ref=f151e922]:
+                  - link [ref=f151e923] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3230373
+                - listitem [ref=f151e924]:
+                  - link [ref=f151e925] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3227450
+                - listitem [ref=f151e926]:
+                  - link [ref=f151e927] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3228914
+                - listitem [ref=f151e928]:
+                  - link [ref=f151e929] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3227458
+                - listitem [ref=f151e930]:
+                  - link [ref=f151e931] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3228910
+                - listitem [ref=f151e932]:
+                  - link [ref=f151e933] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3228906
+                - listitem [ref=f151e934]:
+                  - link [ref=f151e935] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3208386
+                - listitem [ref=f151e936]:
+                  - link [ref=f151e937] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3225888
+            - generic [ref=f151e942]:
+              - link [ref=f151e943] [cursor=pointer]:
+                - /url: /products/nere-stori-check-in-75cm-suitcase-3208386
+                - generic [ref=f151e944]:
+                  - img "Stori Check-In 75cm Suitcase" [ref=f151e945]
+                  - img "Stori Check-In 75cm Suitcase" [ref=f151e946]
+                  - generic:
+                    - generic:
+                      - generic: 40% OFF | TRAVEL DEALS
+                      - generic: FINAL DAYS
+                  - generic [ref=f151e947]:
+                    - button "Add To Bag" [ref=f151e948]
+                    - button "Compare" [ref=f151e950]
+              - generic [ref=f151e951]:
+                - generic [ref=f151e952]:
+                  - generic [ref=f151e953]: Nere
+                  - button [ref=f151e954] [cursor=pointer]
+                - link [ref=f151e956] [cursor=pointer]:
+                  - /url: /products/nere-stori-check-in-75cm-suitcase-3208386
+                  - heading "Stori Check-In 75cm Suitcase" [level=3] [ref=f151e957]
+              - generic [ref=f151e960]:
+                - generic [ref=f151e961]: $269.00
+                - generic [ref=f151e962]: $161.40
+              - list [ref=f151e963]:
+                - listitem [ref=f151e964]:
+                  - link [ref=f151e965] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3204720
+                - listitem [ref=f151e966]:
+                  - link [ref=f151e967] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3227442
+                - listitem [ref=f151e968]:
+                  - link [ref=f151e969] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3212099
+                - listitem [ref=f151e970]:
+                  - link [ref=f151e971] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3225896
+                - listitem [ref=f151e972]:
+                  - link [ref=f151e973] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3225884
+                - listitem [ref=f151e974]:
+                  - link [ref=f151e975] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3230373
+                - listitem [ref=f151e976]:
+                  - link [ref=f151e977] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3227450
+                - listitem [ref=f151e978]:
+                  - link [ref=f151e979] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3228914
+                - listitem [ref=f151e980]:
+                  - link [ref=f151e981] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3227458
+                - listitem [ref=f151e982]:
+                  - link [ref=f151e983] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3228910
+                - listitem [ref=f151e984]:
+                  - link [ref=f151e985] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3228906
+                - listitem [ref=f151e986]:
+                  - link [ref=f151e987] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3208386
+                - listitem [ref=f151e988]:
+                  - link [ref=f151e989] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3225888
+            - generic [ref=f151e994]:
+              - link [ref=f151e995] [cursor=pointer]:
+                - /url: /products/nere-stori-check-in-75cm-suitcase-3225896
+                - generic [ref=f151e996]:
+                  - img "Stori Check-In 75cm Suitcase" [ref=f151e997]
+                  - img "Stori Check-In 75cm Suitcase" [ref=f151e998]
+                  - generic:
+                    - generic:
+                      - generic: 40% OFF | TRAVEL DEALS
+                      - generic: FINAL DAYS
+                  - generic [ref=f151e999]:
+                    - button "Add To Bag" [ref=f151e1000]
+                    - button "Compare" [ref=f151e1002]
+              - generic [ref=f151e1003]:
+                - generic [ref=f151e1004]:
+                  - generic [ref=f151e1005]: Nere
+                  - button [ref=f151e1006] [cursor=pointer]
+                - link [ref=f151e1008] [cursor=pointer]:
+                  - /url: /products/nere-stori-check-in-75cm-suitcase-3225896
+                  - heading "Stori Check-In 75cm Suitcase" [level=3] [ref=f151e1009]
+              - generic [ref=f151e1012]:
+                - generic [ref=f151e1013]: $269.00
+                - generic [ref=f151e1014]: $161.40
+              - list [ref=f151e1015]:
+                - listitem [ref=f151e1016]:
+                  - link [ref=f151e1017] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3204720
+                - listitem [ref=f151e1018]:
+                  - link [ref=f151e1019] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3227442
+                - listitem [ref=f151e1020]:
+                  - link [ref=f151e1021] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3212099
+                - listitem [ref=f151e1022]:
+                  - link [ref=f151e1023] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3225896
+                - listitem [ref=f151e1024]:
+                  - link [ref=f151e1025] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3225884
+                - listitem [ref=f151e1026]:
+                  - link [ref=f151e1027] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3230373
+                - listitem [ref=f151e1028]:
+                  - link [ref=f151e1029] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3227450
+                - listitem [ref=f151e1030]:
+                  - link [ref=f151e1031] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3228914
+                - listitem [ref=f151e1032]:
+                  - link [ref=f151e1033] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3227458
+                - listitem [ref=f151e1034]:
+                  - link [ref=f151e1035] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3228910
+                - listitem [ref=f151e1036]:
+                  - link [ref=f151e1037] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3228906
+                - listitem [ref=f151e1038]:
+                  - link [ref=f151e1039] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3208386
+                - listitem [ref=f151e1040]:
+                  - link [ref=f151e1041] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3225888
+            - generic [ref=f151e1046]:
+              - link [ref=f151e1047] [cursor=pointer]:
+                - /url: /products/nere-stori-check-in-75cm-suitcase-3225888
+                - generic [ref=f151e1048]:
+                  - img "Stori Check-In 75cm Suitcase" [ref=f151e1049]
+                  - img "Stori Check-In 75cm Suitcase" [ref=f151e1050]
+                  - generic:
+                    - generic:
+                      - generic: 40% OFF | TRAVEL DEALS
+                      - generic: FINAL DAYS
+                  - generic [ref=f151e1051]:
+                    - button "Add To Bag" [ref=f151e1052]
+                    - button "Compare" [ref=f151e1054]
+              - generic [ref=f151e1055]:
+                - generic [ref=f151e1056]:
+                  - generic [ref=f151e1057]: Nere
+                  - button [ref=f151e1058] [cursor=pointer]
+                - link [ref=f151e1060] [cursor=pointer]:
+                  - /url: /products/nere-stori-check-in-75cm-suitcase-3225888
+                  - heading "Stori Check-In 75cm Suitcase" [level=3] [ref=f151e1061]
+              - generic [ref=f151e1064]:
+                - generic [ref=f151e1065]: $269.00
+                - generic [ref=f151e1066]: $161.40
+              - list [ref=f151e1067]:
+                - listitem [ref=f151e1068]:
+                  - link [ref=f151e1069] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3204720
+                - listitem [ref=f151e1070]:
+                  - link [ref=f151e1071] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3227442
+                - listitem [ref=f151e1072]:
+                  - link [ref=f151e1073] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3212099
+                - listitem [ref=f151e1074]:
+                  - link [ref=f151e1075] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3225896
+                - listitem [ref=f151e1076]:
+                  - link [ref=f151e1077] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3225884
+                - listitem [ref=f151e1078]:
+                  - link [ref=f151e1079] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3230373
+                - listitem [ref=f151e1080]:
+                  - link [ref=f151e1081] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3227450
+                - listitem [ref=f151e1082]:
+                  - link [ref=f151e1083] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3228914
+                - listitem [ref=f151e1084]:
+                  - link [ref=f151e1085] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3227458
+                - listitem [ref=f151e1086]:
+                  - link [ref=f151e1087] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3228910
+                - listitem [ref=f151e1088]:
+                  - link [ref=f151e1089] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3228906
+                - listitem [ref=f151e1090]:
+                  - link [ref=f151e1091] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3208386
+                - listitem [ref=f151e1092]:
+                  - link [ref=f151e1093] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3225888
+            - generic [ref=f151e1098]:
+              - link [ref=f151e1099] [cursor=pointer]:
+                - /url: /products/nere-stori-check-in-75cm-suitcase-3227458
+                - generic [ref=f151e1100]:
+                  - img "Stori Check-In 75cm Suitcase" [ref=f151e1101]
+                  - img "Stori Check-In 75cm Suitcase" [ref=f151e1102]
+                  - generic:
+                    - generic:
+                      - generic: 40% OFF | TRAVEL DEALS
+                      - generic: FINAL DAYS
+                  - generic [ref=f151e1103]:
+                    - button "Add To Bag" [ref=f151e1104]
+                    - button "Compare" [ref=f151e1106]
+              - generic [ref=f151e1107]:
+                - generic [ref=f151e1108]:
+                  - generic [ref=f151e1109]: Nere
+                  - button [ref=f151e1110] [cursor=pointer]
+                - link [ref=f151e1112] [cursor=pointer]:
+                  - /url: /products/nere-stori-check-in-75cm-suitcase-3227458
+                  - heading "Stori Check-In 75cm Suitcase" [level=3] [ref=f151e1113]
+              - generic [ref=f151e1116]:
+                - generic [ref=f151e1117]: $269.00
+                - generic [ref=f151e1118]: $161.40
+              - list [ref=f151e1119]:
+                - listitem [ref=f151e1120]:
+                  - link [ref=f151e1121] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3204720
+                - listitem [ref=f151e1122]:
+                  - link [ref=f151e1123] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3227442
+                - listitem [ref=f151e1124]:
+                  - link [ref=f151e1125] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3212099
+                - listitem [ref=f151e1126]:
+                  - link [ref=f151e1127] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3225896
+                - listitem [ref=f151e1128]:
+                  - link [ref=f151e1129] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3225884
+                - listitem [ref=f151e1130]:
+                  - link [ref=f151e1131] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3230373
+                - listitem [ref=f151e1132]:
+                  - link [ref=f151e1133] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3227450
+                - listitem [ref=f151e1134]:
+                  - link [ref=f151e1135] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3228914
+                - listitem [ref=f151e1136]:
+                  - link [ref=f151e1137] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3227458
+                - listitem [ref=f151e1138]:
+                  - link [ref=f151e1139] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3228910
+                - listitem [ref=f151e1140]:
+                  - link [ref=f151e1141] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3228906
+                - listitem [ref=f151e1142]:
+                  - link [ref=f151e1143] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3208386
+                - listitem [ref=f151e1144]:
+                  - link [ref=f151e1145] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3225888
+            - generic [ref=f151e1150]:
+              - link [ref=f151e1151] [cursor=pointer]:
+                - /url: /products/nere-packing-cubes-5-pack-3213130
+                - generic [ref=f151e1152]:
+                  - img "Packing Cubes 5 Pack" [ref=f151e1153]
+                  - img "Packing Cubes 5 Pack" [ref=f151e1154]
+                  - generic: 50% OFF | SALE
+                  - button "Add To Bag" [ref=f151e1156]
+              - generic [ref=f151e1158]:
+                - generic [ref=f151e1159]:
+                  - generic [ref=f151e1160]: Nere
+                  - button [ref=f151e1161] [cursor=pointer]
+                - link [ref=f151e1163] [cursor=pointer]:
+                  - /url: /products/nere-packing-cubes-5-pack-3213130
+                  - heading "Packing Cubes 5 Pack" [level=3] [ref=f151e1164]
+              - generic [ref=f151e1167]:
+                - generic [ref=f151e1168]: $39.99
+                - generic [ref=f151e1169]: $23.99
+                - generic [ref=f151e1170]: $19.99
+              - list [ref=f151e1171]:
+                - listitem [ref=f151e1172]:
+                  - link [ref=f151e1173] [cursor=pointer]:
+                    - /url: /products/nere-packing-cubes-5-pack-3213130
+            - generic [ref=f151e1178]:
+              - link [ref=f151e1179] [cursor=pointer]:
+                - /url: /products/nere-stori-check-in-75cm-suitcase-3225884
+                - generic [ref=f151e1180]:
+                  - img "Stori Check-In 75cm Suitcase" [ref=f151e1181]
+                  - img "Stori Check-In 75cm Suitcase" [ref=f151e1182]
+                  - generic:
+                    - generic:
+                      - generic: 40% OFF | TRAVEL DEALS
+                      - generic: FINAL DAYS
+                  - generic [ref=f151e1183]:
+                    - button "Add To Bag" [ref=f151e1184]
+                    - button "Compare" [ref=f151e1186]
+              - generic [ref=f151e1187]:
+                - generic [ref=f151e1188]:
+                  - generic [ref=f151e1189]: Nere
+                  - button [ref=f151e1190] [cursor=pointer]
+                - link [ref=f151e1192] [cursor=pointer]:
+                  - /url: /products/nere-stori-check-in-75cm-suitcase-3225884
+                  - heading "Stori Check-In 75cm Suitcase" [level=3] [ref=f151e1193]
+              - generic [ref=f151e1196]:
+                - generic [ref=f151e1197]: $269.00
+                - generic [ref=f151e1198]: $161.40
+              - list [ref=f151e1199]:
+                - listitem [ref=f151e1200]:
+                  - link [ref=f151e1201] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3204720
+                - listitem [ref=f151e1202]:
+                  - link [ref=f151e1203] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3227442
+                - listitem [ref=f151e1204]:
+                  - link [ref=f151e1205] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3212099
+                - listitem [ref=f151e1206]:
+                  - link [ref=f151e1207] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3225896
+                - listitem [ref=f151e1208]:
+                  - link [ref=f151e1209] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3225884
+                - listitem [ref=f151e1210]:
+                  - link [ref=f151e1211] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3230373
+                - listitem [ref=f151e1212]:
+                  - link [ref=f151e1213] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3227450
+                - listitem [ref=f151e1214]:
+                  - link [ref=f151e1215] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3228914
+                - listitem [ref=f151e1216]:
+                  - link [ref=f151e1217] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3227458
+                - listitem [ref=f151e1218]:
+                  - link [ref=f151e1219] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3228910
+                - listitem [ref=f151e1220]:
+                  - link [ref=f151e1221] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3228906
+                - listitem [ref=f151e1222]:
+                  - link [ref=f151e1223] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3208386
+                - listitem [ref=f151e1224]:
+                  - link [ref=f151e1225] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3225888
+            - generic [ref=f151e1230]:
+              - link [ref=f151e1231] [cursor=pointer]:
+                - /url: /products/nere-suitcase-cover-3227509
+                - generic [ref=f151e1232]:
+                  - img "Suitcase Cover" [ref=f151e1233]
+                  - img "Suitcase Cover" [ref=f151e1234]
+                  - button "Add To Bag" [ref=f151e1236]
+              - generic [ref=f151e1238]:
+                - generic [ref=f151e1239]:
+                  - generic [ref=f151e1240]: Nere
+                  - button [ref=f151e1241] [cursor=pointer]
+                - link [ref=f151e1243] [cursor=pointer]:
+                  - /url: /products/nere-suitcase-cover-3227509
+                  - heading "Suitcase Cover" [level=3] [ref=f151e1244]
+              - generic [ref=f151e1245]: $29.99
+            - generic [ref=f151e1253]:
+              - link [ref=f151e1254] [cursor=pointer]:
+                - /url: /products/nere-luggage-strap-3227507
+                - generic [ref=f151e1255]:
+                  - img "Luggage Strap" [ref=f151e1256]
+                  - button "Add To Bag" [ref=f151e1258]
+              - generic [ref=f151e1260]:
+                - generic [ref=f151e1261]:
+                  - generic [ref=f151e1262]: Nere
+                  - button [ref=f151e1263] [cursor=pointer]
+                - link [ref=f151e1265] [cursor=pointer]:
+                  - /url: /products/nere-luggage-strap-3227507
+                  - heading "Luggage Strap" [level=3] [ref=f151e1266]
+              - generic [ref=f151e1267]: $9.99
+              - list [ref=f151e1271]:
+                - listitem [ref=f151e1272]:
+                  - link [ref=f151e1273] [cursor=pointer]:
+                    - /url: /products/nere-luggage-strap-3209049
+            - generic [ref=f151e1278]:
+              - link [ref=f151e1279] [cursor=pointer]:
+                - /url: /products/nere-stori-carry-on-55cm-suitcase-3212101
+                - generic [ref=f151e1280]:
+                  - img "Stori Carry-On 55cm Suitcase" [ref=f151e1281]
+                  - img "Stori Carry-On 55cm Suitcase" [ref=f151e1282]
+                  - generic:
+                    - generic:
+                      - generic: 50% OFF | TRAVEL DEALS
+                      - generic: FINAL DAYS
+                  - generic [ref=f151e1283]:
+                    - button "Add To Bag" [ref=f151e1284]
+                    - button "Compare" [ref=f151e1286]
+              - generic [ref=f151e1287]:
+                - generic [ref=f151e1288]:
+                  - generic [ref=f151e1289]: Nere
+                  - button [ref=f151e1290] [cursor=pointer]
+                - link [ref=f151e1292] [cursor=pointer]:
+                  - /url: /products/nere-stori-carry-on-55cm-suitcase-3212101
+                  - heading "Stori Carry-On 55cm Suitcase" [level=3] [ref=f151e1293]
+              - generic [ref=f151e1296]:
+                - generic [ref=f151e1297]: $219.00
+                - generic [ref=f151e1298]: $131.40
+                - generic [ref=f151e1299]: $109.50
+              - list [ref=f151e1300]:
+                - listitem [ref=f151e1301]:
+                  - link [ref=f151e1302] [cursor=pointer]:
+                    - /url: /products/nere-stori-carry-on-55cm-suitcase-3227444
+                - listitem [ref=f151e1303]:
+                  - link [ref=f151e1304] [cursor=pointer]:
+                    - /url: /products/nere-stori-carry-on-55cm-suitcase-3225898
+                - listitem [ref=f151e1305]:
+                  - link [ref=f151e1306] [cursor=pointer]:
+                    - /url: /products/nere-stori-carry-on-55cm-suitcase-3212101
+                - listitem [ref=f151e1307]:
+                  - link [ref=f151e1308] [cursor=pointer]:
+                    - /url: /products/nere-stori-carry-on-55cm-suitcase-3225886
+                - listitem [ref=f151e1309]:
+                  - link [ref=f151e1310] [cursor=pointer]:
+                    - /url: /products/nere-stori-carry-on-55cm-suitcase-3230375
+                - listitem [ref=f151e1311]:
+                  - link [ref=f151e1312] [cursor=pointer]:
+                    - /url: /products/nere-stori-carry-on-55cm-suitcase-3227452
+                - listitem [ref=f151e1313]:
+                  - link [ref=f151e1314] [cursor=pointer]:
+                    - /url: /products/nere-stori-carry-on-55cm-suitcase-3228912
+                - listitem [ref=f151e1315]:
+                  - link [ref=f151e1316] [cursor=pointer]:
+                    - /url: /products/nere-stori-carry-on-55cm-suitcase-3228916
+                - listitem [ref=f151e1317]:
+                  - link [ref=f151e1318] [cursor=pointer]:
+                    - /url: /products/nere-stori-carry-on-55cm-suitcase-3227460
+                - listitem [ref=f151e1319]:
+                  - link [ref=f151e1320] [cursor=pointer]:
+                    - /url: /products/nere-stori-carry-on-55cm-suitcase-3228908
+                - listitem [ref=f151e1321]:
+                  - link [ref=f151e1322] [cursor=pointer]:
+                    - /url: /products/nere-stori-carry-on-55cm-suitcase-3208388
+                - listitem [ref=f151e1323]:
+                  - link [ref=f151e1324] [cursor=pointer]:
+                    - /url: /products/nere-stori-carry-on-55cm-suitcase-3225890
+            - generic [ref=f151e1329]:
+              - link "Luggage Strap Add To Bag" [ref=f151e1330] [cursor=pointer]:
+                - /url: /products/nere-luggage-strap-3207553
+                - generic [ref=f151e1331]:
+                  - img "Luggage Strap" [ref=f151e1332]
+                  - button "Add To Bag" [ref=f151e1336]
+              - generic [ref=f151e1338]:
+                - generic [ref=f151e1339]:
+                  - generic [ref=f151e1340]: Nere
+                  - button [ref=f151e1341] [cursor=pointer]
+                - link [ref=f151e1343] [cursor=pointer]:
+                  - /url: /products/nere-luggage-strap-3207553
+                  - heading "Luggage Strap" [level=3] [ref=f151e1344]
+              - generic [ref=f151e1345]: $9.99
+              - list [ref=f151e1349]:
+                - listitem [ref=f151e1350]:
+                  - link [ref=f151e1351] [cursor=pointer]:
+                    - /url: /products/nere-luggage-strap-3209049
+            - generic [ref=f151e1356]:
+              - link [ref=f151e1357] [cursor=pointer]:
+                - /url: /products/nere-silicone-passport-cover-3211412
+                - generic [ref=f151e1358]:
+                  - img "Silicone Passport Cover" [ref=f151e1359]
+                  - img "Silicone Passport Cover" [ref=f151e1360]
+                  - generic: 50% OFF | SALE
+                  - button "Add To Bag" [ref=f151e1362]
+              - generic [ref=f151e1364]:
+                - generic [ref=f151e1365]:
+                  - generic [ref=f151e1366]: Nere
+                  - button [ref=f151e1367] [cursor=pointer]
+                - link [ref=f151e1369] [cursor=pointer]:
+                  - /url: /products/nere-silicone-passport-cover-3211412
+                  - heading "Silicone Passport Cover" [level=3] [ref=f151e1370]
+              - generic [ref=f151e1373]:
+                - generic [ref=f151e1374]: $9.99
+                - generic [ref=f151e1375]: $6.99
+                - generic [ref=f151e1376]: $4.99
+              - list [ref=f151e1377]:
+                - listitem [ref=f151e1378]:
+                  - link [ref=f151e1379] [cursor=pointer]:
+                    - /url: /products/nere-silicone-passport-cover-3211412
+                - listitem [ref=f151e1380]:
+                  - link [ref=f151e1381] [cursor=pointer]:
+                    - /url: /products/nere-silicone-passport-cover-3211561
+                - listitem [ref=f151e1382]:
+                  - link [ref=f151e1383] [cursor=pointer]:
+                    - /url: /products/nere-silicone-passport-cover-3211414
+            - generic [ref=f151e1388]:
+              - link "Luggage Strap Add To Bag" [ref=f151e1389] [cursor=pointer]:
+                - /url: /products/nere-luggage-strap-3210803
+                - generic [ref=f151e1390]:
+                  - img "Luggage Strap" [ref=f151e1391]
+                  - button "Add To Bag" [ref=f151e1395]
+              - generic [ref=f151e1397]:
+                - generic [ref=f151e1398]:
+                  - generic [ref=f151e1399]: Nere
+                  - button [ref=f151e1400] [cursor=pointer]
+                - link [ref=f151e1402] [cursor=pointer]:
+                  - /url: /products/nere-luggage-strap-3210803
+                  - heading "Luggage Strap" [level=3] [ref=f151e1403]
+              - generic [ref=f151e1404]: $9.99
+              - list [ref=f151e1408]:
+                - listitem [ref=f151e1409]:
+                  - link [ref=f151e1410] [cursor=pointer]:
+                    - /url: /products/nere-luggage-strap-3209049
+            - generic [ref=f151e1415]:
+              - link [ref=f151e1416] [cursor=pointer]:
+                - /url: /products/nere-stori-check-in-65cm-suitcase-3212100
+                - generic [ref=f151e1417]:
+                  - img "Stori Check-In 65cm Suitcase" [ref=f151e1418]
+                  - img "Stori Check-In 65cm Suitcase" [ref=f151e1419]
+                  - generic:
+                    - generic:
+                      - generic: 50% OFF | TRAVEL DEALS
+                      - generic: FINAL DAYS
+                  - generic [ref=f151e1420]:
+                    - button "Add To Bag" [ref=f151e1421]
+                    - button "Compare" [ref=f151e1423]
+              - generic [ref=f151e1424]:
+                - generic [ref=f151e1425]:
+                  - generic [ref=f151e1426]: Nere
+                  - button [ref=f151e1427] [cursor=pointer]
+                - link [ref=f151e1429] [cursor=pointer]:
+                  - /url: /products/nere-stori-check-in-65cm-suitcase-3212100
+                  - heading "Stori Check-In 65cm Suitcase" [level=3] [ref=f151e1430]
+              - generic [ref=f151e1433]:
+                - generic [ref=f151e1434]: $259.00
+                - generic [ref=f151e1435]: $155.40
+                - generic [ref=f151e1436]: $129.50
+              - list [ref=f151e1437]:
+                - listitem [ref=f151e1438]:
+                  - link [ref=f151e1439] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-65cm-suitcase-3211797
+                - listitem [ref=f151e1440]:
+                  - link [ref=f151e1441] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-65cm-suitcase-3227443
+                - listitem [ref=f151e1442]:
+                  - link [ref=f151e1443] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-65cm-suitcase-3225897
+                - listitem [ref=f151e1444]:
+                  - link [ref=f151e1445] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-65cm-suitcase-3212100
+                - listitem [ref=f151e1446]:
+                  - link [ref=f151e1447] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-65cm-suitcase-3225885
+                - listitem [ref=f151e1448]:
+                  - link [ref=f151e1449] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-65cm-suitcase-3230374
+                - listitem [ref=f151e1450]:
+                  - link [ref=f151e1451] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-65cm-suitcase-3227451
+                - listitem [ref=f151e1452]:
+                  - link [ref=f151e1453] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-65cm-suitcase-3228915
+                - listitem [ref=f151e1454]:
+                  - link [ref=f151e1455] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-65cm-suitcase-3227459
+                - listitem [ref=f151e1456]:
+                  - link [ref=f151e1457] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-65cm-suitcase-3228911
+                - listitem [ref=f151e1458]:
+                  - link [ref=f151e1459] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-65cm-suitcase-3225889
+                - listitem [ref=f151e1460]:
+                  - link [ref=f151e1461] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-65cm-suitcase-3228907
+                - listitem [ref=f151e1462]:
+                  - link [ref=f151e1463] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-65cm-suitcase-3208387
+            - generic [ref=f151e1468]:
+              - link [ref=f151e1469] [cursor=pointer]:
+                - /url: /products/nere-silicone-passport-cover-3211414
+                - generic [ref=f151e1470]:
+                  - img "Silicone Passport Cover" [ref=f151e1471]
+                  - img "Silicone Passport Cover" [ref=f151e1472]
+                  - generic: 50% OFF | SALE
+                  - button "Add To Bag" [ref=f151e1474]
+              - generic [ref=f151e1476]:
+                - generic [ref=f151e1477]:
+                  - generic [ref=f151e1478]: Nere
+                  - button [ref=f151e1479] [cursor=pointer]
+                - link [ref=f151e1481] [cursor=pointer]:
+                  - /url: /products/nere-silicone-passport-cover-3211414
+                  - heading "Silicone Passport Cover" [level=3] [ref=f151e1482]
+              - generic [ref=f151e1485]:
+                - generic [ref=f151e1486]: $9.99
+                - generic [ref=f151e1487]: $6.99
+                - generic [ref=f151e1488]: $4.99
+              - list [ref=f151e1489]:
+                - listitem [ref=f151e1490]:
+                  - link [ref=f151e1491] [cursor=pointer]:
+                    - /url: /products/nere-silicone-passport-cover-3211412
+                - listitem [ref=f151e1492]:
+                  - link [ref=f151e1493] [cursor=pointer]:
+                    - /url: /products/nere-silicone-passport-cover-3211561
+                - listitem [ref=f151e1494]:
+                  - link [ref=f151e1495] [cursor=pointer]:
+                    - /url: /products/nere-silicone-passport-cover-3211414
+            - generic [ref=f151e1500]:
+              - link [ref=f151e1501] [cursor=pointer]:
+                - /url: /products/aya-gia-rfid-pocket-nylon-sling-bag-3216326
+                - generic [ref=f151e1502]:
+                  - img "Gia RFID Pocket Nylon Sling Bag" [ref=f151e1503]
+                  - img "Gia RFID Pocket Nylon Sling Bag" [ref=f151e1504]
+                  - generic: UP TO 50% OFF | SALE
+                  - button "Add To Bag" [ref=f151e1506]
+              - generic [ref=f151e1508]:
+                - generic [ref=f151e1509]:
+                  - generic [ref=f151e1510]: AYA
+                  - button [ref=f151e1511] [cursor=pointer]
+                - link [ref=f151e1513] [cursor=pointer]:
+                  - /url: /products/aya-gia-rfid-pocket-nylon-sling-bag-3216326
+                  - heading "Gia RFID Pocket Nylon Sling Bag" [level=3] [ref=f151e1514]
+              - generic [ref=f151e1517]:
+                - generic [ref=f151e1518]: $59.99
+                - generic [ref=f151e1519]: $41.99
+                - generic [ref=f151e1520]: $34.00
+              - list [ref=f151e1521]:
+                - listitem [ref=f151e1522]:
+                  - link [ref=f151e1523] [cursor=pointer]:
+                    - /url: /products/aya-gia-rfid-pocket-nylon-sling-bag-3216326
+                - listitem [ref=f151e1524]:
+                  - link [ref=f151e1525] [cursor=pointer]:
+                    - /url: /products/aya-gia-rfid-pocket-nylon-sling-bag-3220060
+        - generic [ref=f151e1526]:
+          - heading "Reviews & Ratings" [level=3] [ref=f151e1527]
+          - generic [ref=f151e1528]:
+            - generic [ref=f151e1529]:
+              - generic [ref=f151e1531]:
+                - generic [ref=f151e1532]: "4.7"
+                - generic [ref=f151e1533]:
+                  - generic [ref=f151e1534]:
+                    - generic [ref=f151e1535]: ★
+                    - generic [ref=f151e1536]: ★
+                    - generic [ref=f151e1537]: ★
+                    - generic [ref=f151e1538]: ★
+                    - generic [ref=f151e1539]: ★ ★
+                  - generic [ref=f151e1540]: Based on 241 reviews
+              - generic [ref=f151e1544]:
+                - button "Write a Review" [ref=f151e1545] [cursor=pointer]
+                - generic [ref=f151e1546]:
+                  - generic [ref=f151e1547]: "Sort By:"
+                  - button "Newest First" [ref=f151e1549] [cursor=pointer]
+            - generic [ref=f151e1555]:
+              - generic [ref=f151e1556]:
+                - generic [ref=f151e1557]:
+                  - generic [ref=f151e1558]: Natalie C.
+                  - generic [ref=f151e1559]: Verified Buyer
+                  - generic [ref=f151e1560]: I recommend this product
+                - generic [ref=f151e1565]:
+                  - generic [ref=f151e1566]:
+                    - generic [ref=f151e1568]:
+                      - generic [ref=f151e1569]: ★
+                      - generic [ref=f151e1570]: ★
+                      - generic [ref=f151e1571]: ★
+                      - generic [ref=f151e1572]: ★
+                      - generic [ref=f151e1573]: ★
+                    - generic [ref=f151e1574]: Yesterday
+                  - heading "I bought the same in" [level=3] [ref=f151e1575]
+                  - generic [ref=f151e1576]: I bought the same in a different colour for my eldest daughter. My youngest will also love her luggage
+                  - generic [ref=f151e1577]:
+                    - text: Was this helpful?
+                    - generic [ref=f151e1578]:
+                      - button "0" [ref=f151e1579] [cursor=pointer]
+                      - button "0" [ref=f151e1584] [cursor=pointer]
+              - generic [ref=f151e1589]:
+                - generic [ref=f151e1590]:
+                  - generic [ref=f151e1591]: Rosealyn C.
+                  - generic [ref=f151e1592]: Verified Buyer
+                  - generic [ref=f151e1593]: I recommend this product
+                - generic [ref=f151e1598]:
+                  - generic [ref=f151e1599]:
+                    - generic [ref=f151e1601]:
+                      - generic [ref=f151e1602]: ★
+                      - generic [ref=f151e1603]: ★
+                      - generic [ref=f151e1604]: ★
+                      - generic [ref=f151e1605]: ★
+                      - generic [ref=f151e1606]: ★
+                    - generic [ref=f151e1607]: 2 days ago
+                  - heading "Packed perfectly and suitcases are" [level=3] [ref=f151e1608]
+                  - generic [ref=f151e1609]: Packed perfectly and suitcases are great
+                  - generic [ref=f151e1610]:
+                    - text: Was this helpful?
+                    - generic [ref=f151e1611]:
+                      - button "0" [ref=f151e1612] [cursor=pointer]
+                      - button "0" [ref=f151e1617] [cursor=pointer]
+              - generic [ref=f151e1622]:
+                - generic [ref=f151e1623]:
+                  - generic [ref=f151e1624]: Megan R.
+                  - generic [ref=f151e1625]: Verified Buyer
+                  - generic [ref=f151e1626]: I recommend this product
+                - generic [ref=f151e1631]:
+                  - generic [ref=f151e1632]:
+                    - generic [ref=f151e1634]:
+                      - generic [ref=f151e1635]: ★
+                      - generic [ref=f151e1636]: ★
+                      - generic [ref=f151e1637]: ★
+                      - generic [ref=f151e1638]: ★
+                      - generic [ref=f151e1639]: ★
+                    - generic [ref=f151e1640]: 3 days ago
+                  - heading "Great size. No regrets" [level=3] [ref=f151e1641]
+                  - generic [ref=f151e1642]: Great size. No regrets
+                  - generic [ref=f151e1643]:
+                    - text: Was this helpful?
+                    - generic [ref=f151e1644]:
+                      - button "0" [ref=f151e1645] [cursor=pointer]
+                      - button "0" [ref=f151e1650] [cursor=pointer]
+              - generic [ref=f151e1655]:
+                - generic [ref=f151e1656]:
+                  - generic [ref=f151e1657]: Kris M.
+                  - generic [ref=f151e1658]: Verified Buyer
+                  - generic [ref=f151e1659]: I recommend this product
+                - generic [ref=f151e1664]:
+                  - generic [ref=f151e1665]:
+                    - generic [ref=f151e1667]:
+                      - generic [ref=f151e1668]: ★
+                      - generic [ref=f151e1669]: ★
+                      - generic [ref=f151e1670]: ★
+                      - generic [ref=f151e1671]: ★
+                      - generic [ref=f151e1672]: ★
+                    - generic [ref=f151e1673]: 3 days ago
+                  - heading "Used for the first time" [level=3] [ref=f151e1674]
+                  - generic [ref=f151e1675]: Used for the first time this week. Easy to maneuver. Lightweight and did the job. ‘Pretty’ colour on the Carousel 😛
+                  - generic [ref=f151e1676]:
+                    - text: Was this helpful?
+                    - generic [ref=f151e1677]:
+                      - button "0" [ref=f151e1678] [cursor=pointer]
+                      - button "0" [ref=f151e1683] [cursor=pointer]
+              - generic [ref=f151e1688]:
+                - generic [ref=f151e1689]:
+                  - generic [ref=f151e1690]: Sheree F.
+                  - generic [ref=f151e1691]: Verified Buyer
+                  - generic [ref=f151e1692]: I recommend this product
+                - generic [ref=f151e1697]:
+                  - generic [ref=f151e1698]:
+                    - generic [ref=f151e1700]:
+                      - generic [ref=f151e1701]: ★
+                      - generic [ref=f151e1702]: ★
+                      - generic [ref=f151e1703]: ★
+                      - generic [ref=f151e1704]: ★
+                      - generic [ref=f151e1705]: ★
+                    - generic [ref=f151e1706]: 4 days ago
+                  - heading "Great bag" [level=3] [ref=f151e1707]
+                  - generic [ref=f151e1708]: Great bag
+                  - generic [ref=f151e1709]:
+                    - text: Was this helpful?
+                    - generic [ref=f151e1710]:
+                      - button "0" [ref=f151e1711] [cursor=pointer]
+                      - button "0" [ref=f151e1716] [cursor=pointer]
+              - generic [ref=f151e1721]:
+                - generic [ref=f151e1722]:
+                  - generic [ref=f151e1723]: Elizabeth R.
+                  - generic [ref=f151e1724]: Verified Buyer
+                  - generic [ref=f151e1725]: I recommend this product
+                - generic [ref=f151e1730]:
+                  - generic [ref=f151e1731]:
+                    - generic [ref=f151e1733]:
+                      - generic [ref=f151e1734]: ★
+                      - generic [ref=f151e1735]: ★
+                      - generic [ref=f151e1736]: ★
+                      - generic [ref=f151e1737]: ★
+                      - generic [ref=f151e1738]: ★
+                    - generic [ref=f151e1739]: 5 days ago
+                  - heading "Excellent suitcase very happy we" [level=3] [ref=f151e1740]
+                  - generic [ref=f151e1741]: Excellent suitcase very happy we have now purchased 2 of these
+                  - generic [ref=f151e1742]:
+                    - text: Was this helpful?
+                    - generic [ref=f151e1743]:
+                      - button "0" [ref=f151e1744] [cursor=pointer]
+                      - button "0" [ref=f151e1749] [cursor=pointer]
+              - generic [ref=f151e1754]:
+                - generic [ref=f151e1755]:
+                  - generic [ref=f151e1756]: Anna W.
+                  - generic [ref=f151e1757]: Verified Buyer
+                  - generic [ref=f151e1758]: I recommend this product
+                - generic [ref=f151e1763]:
+                  - generic [ref=f151e1764]:
+                    - generic [ref=f151e1766]:
+                      - generic [ref=f151e1767]: ★
+                      - generic [ref=f151e1768]: ★
+                      - generic [ref=f151e1769]: ★
+                      - generic [ref=f151e1770]: ★
+                      - generic [ref=f151e1771]: ★
+                    - generic [ref=f151e1772]: 7 days ago
+                  - heading "Great luggage, always reliable" [level=3] [ref=f151e1773]
+                  - generic [ref=f151e1774]: Great luggage, always reliable
+                  - generic [ref=f151e1775]:
+                    - text: Was this helpful?
+                    - generic [ref=f151e1776]:
+                      - button "0" [ref=f151e1777] [cursor=pointer]
+                      - button "0" [ref=f151e1782] [cursor=pointer]
+              - generic [ref=f151e1787]:
+                - generic [ref=f151e1788]:
+                  - generic [ref=f151e1789]: Katie D.
+                  - generic [ref=f151e1790]: Verified Buyer
+                  - generic [ref=f151e1791]: I recommend this product
+                - generic [ref=f151e1796]:
+                  - generic [ref=f151e1797]:
+                    - generic [ref=f151e1799]:
+                      - generic [ref=f151e1800]: ★
+                      - generic [ref=f151e1801]: ★
+                      - generic [ref=f151e1802]: ★
+                      - generic [ref=f151e1803]: ★
+                      - generic [ref=f151e1804]: ★
+                    - generic [ref=f151e1805]: 9 days ago
+                  - heading "Colour is amazing!!! Great suitcase" [level=3] [ref=f151e1806]
+                  - generic [ref=f151e1807]: Colour is amazing!!! Great suitcase big enough for everything great price point perfect for our trip
+                  - generic [ref=f151e1808]:
+                    - text: Was this helpful?
+                    - generic [ref=f151e1809]:
+                      - button "0" [ref=f151e1810] [cursor=pointer]
+                      - button "0" [ref=f151e1815] [cursor=pointer]
+              - generic [ref=f151e1820]:
+                - generic [ref=f151e1821]:
+                  - generic [ref=f151e1822]: Katie D.
+                  - generic [ref=f151e1823]: Verified Buyer
+                  - generic [ref=f151e1824]: I recommend this product
+                - generic [ref=f151e1829]:
+                  - generic [ref=f151e1830]:
+                    - generic [ref=f151e1832]:
+                      - generic [ref=f151e1833]: ★
+                      - generic [ref=f151e1834]: ★
+                      - generic [ref=f151e1835]: ★
+                      - generic [ref=f151e1836]: ★
+                      - generic [ref=f151e1837]: ★
+                    - generic [ref=f151e1838]: 9 days ago
+                  - heading "Love this suitcase great colour" [level=3] [ref=f151e1839]
+                  - generic [ref=f151e1840]: Love this suitcase great colour options I got it at a great price and has everything I need
+                  - generic [ref=f151e1841]:
+                    - text: Was this helpful?
+                    - generic [ref=f151e1842]:
+                      - button "0" [ref=f151e1843] [cursor=pointer]
+                      - button "0" [ref=f151e1848] [cursor=pointer]
+              - generic [ref=f151e1853]:
+                - generic [ref=f151e1854]:
+                  - generic [ref=f151e1855]: Kristy m.
+                  - generic [ref=f151e1856]: Verified Buyer
+                  - generic [ref=f151e1857]: I recommend this product
+                - generic [ref=f151e1862]:
+                  - generic [ref=f151e1863]:
+                    - generic [ref=f151e1865]:
+                      - generic [ref=f151e1866]: ★
+                      - generic [ref=f151e1867]: ★
+                      - generic [ref=f151e1868]: ★
+                      - generic [ref=f151e1869]: ★
+                      - generic [ref=f151e1870]: ★
+                    - generic [ref=f151e1871]: 11 days ago
+                  - heading "Stylish" [level=3] [ref=f151e1872]
+                  - generic [ref=f151e1873]: Great suitcase. Bought two in different colours for an upcoming trip. Looks stylish and stands out.
+                  - generic [ref=f151e1874]:
+                    - text: Was this helpful?
+                    - generic [ref=f151e1875]:
+                      - button "1" [ref=f151e1876] [cursor=pointer]
+                      - button "0" [ref=f151e1881] [cursor=pointer]
+              - button "Show More" [ref=f151e1887] [cursor=pointer]
+        - generic [ref=f151e1888]:
+          - heading "RANGE" [level=2] [ref=f151e1890]
+          - generic [ref=f151e1893]:
+            - generic [ref=f151e1898]:
+              - link [ref=f151e1899] [cursor=pointer]:
+                - /url: /products/nere-stori-check-in-65cm-suitcase-3208387
+                - generic [ref=f151e1900]:
+                  - img "Stori Check-In 65cm Suitcase" [ref=f151e1901]
+                  - img "Stori Check-In 65cm Suitcase" [ref=f151e1902]
+                  - generic:
+                    - generic:
+                      - generic: 40% OFF | TRAVEL DEALS
+                      - generic: FINAL DAYS
+                  - generic [ref=f151e1903]:
+                    - button "Add To Bag" [ref=f151e1904]
+                    - button "Compare" [ref=f151e1906]
+              - generic [ref=f151e1907]:
+                - generic [ref=f151e1908]:
+                  - generic [ref=f151e1909]: Nere
+                  - button [ref=f151e1910] [cursor=pointer]
+                - link [ref=f151e1912] [cursor=pointer]:
+                  - /url: /products/nere-stori-check-in-65cm-suitcase-3208387
+                  - heading "Stori Check-In 65cm Suitcase" [level=3] [ref=f151e1913]
+              - generic [ref=f151e1916]:
+                - generic [ref=f151e1917]: $259.00
+                - generic [ref=f151e1918]: $155.40
+              - list [ref=f151e1919]:
+                - listitem [ref=f151e1920]:
+                  - link [ref=f151e1921] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-65cm-suitcase-3211797
+                - listitem [ref=f151e1922]:
+                  - link [ref=f151e1923] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-65cm-suitcase-3227443
+                - listitem [ref=f151e1924]:
+                  - link [ref=f151e1925] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-65cm-suitcase-3225897
+                - listitem [ref=f151e1926]:
+                  - link [ref=f151e1927] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-65cm-suitcase-3212100
+                - listitem [ref=f151e1928]:
+                  - link [ref=f151e1929] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-65cm-suitcase-3225885
+                - listitem [ref=f151e1930]:
+                  - link [ref=f151e1931] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-65cm-suitcase-3230374
+                - listitem [ref=f151e1932]:
+                  - link [ref=f151e1933] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-65cm-suitcase-3227451
+                - listitem [ref=f151e1934]:
+                  - link [ref=f151e1935] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-65cm-suitcase-3228915
+                - listitem [ref=f151e1936]:
+                  - link [ref=f151e1937] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-65cm-suitcase-3227459
+                - listitem [ref=f151e1938]:
+                  - link [ref=f151e1939] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-65cm-suitcase-3228911
+                - listitem [ref=f151e1940]:
+                  - link [ref=f151e1941] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-65cm-suitcase-3225889
+                - listitem [ref=f151e1942]:
+                  - link [ref=f151e1943] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-65cm-suitcase-3228907
+                - listitem [ref=f151e1944]:
+                  - link [ref=f151e1945] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-65cm-suitcase-3208387
+            - generic [ref=f151e1950]:
+              - link "Venture Dual Open 76cm Suitcase 40% OFF | TRAVEL DEALS FINAL DAYS Add To Bag Compare" [ref=f151e1951] [cursor=pointer]:
+                - /url: /products/nere-venture-dual-open-76cm-suitcase-3215810
+                - generic [ref=f151e1952]:
+                  - img "Venture Dual Open 76cm Suitcase" [ref=f151e1953]
+                  - generic:
+                    - generic:
+                      - generic: 40% OFF | TRAVEL DEALS
+                      - generic: FINAL DAYS
+                  - generic [ref=f151e1956]:
+                    - button "Add To Bag" [ref=f151e1957]
+                    - button "Compare" [ref=f151e1959]
+              - generic [ref=f151e1960]:
+                - generic [ref=f151e1961]:
+                  - generic [ref=f151e1962]: Nere
+                  - button [ref=f151e1963] [cursor=pointer]
+                - link [ref=f151e1965] [cursor=pointer]:
+                  - /url: /products/nere-venture-dual-open-76cm-suitcase-3215810
+                  - heading "Venture Dual Open 76cm Suitcase" [level=3] [ref=f151e1966]
+              - generic [ref=f151e1969]:
+                - generic [ref=f151e1970]: $299.00
+                - generic [ref=f151e1971]: $179.40
+              - list [ref=f151e1972]:
+                - listitem [ref=f151e1973]:
+                  - link [ref=f151e1974] [cursor=pointer]:
+                    - /url: /products/nere-venture-dual-open-76cm-suitcase-3215810
+                - listitem [ref=f151e1975]:
+                  - link [ref=f151e1976] [cursor=pointer]:
+                    - /url: /products/nere-venture-dual-open-76cm-suitcase-3222030
+                - listitem [ref=f151e1977]:
+                  - link [ref=f151e1978] [cursor=pointer]:
+                    - /url: /products/nere-venture-dual-open-76cm-suitcase-3217612
+                - listitem [ref=f151e1979]:
+                  - link [ref=f151e1980] [cursor=pointer]:
+                    - /url: /products/nere-venture-dual-open-76cm-suitcase-3228938
+                - listitem [ref=f151e1981]:
+                  - link [ref=f151e1982] [cursor=pointer]:
+                    - /url: /products/nere-venture-dual-open-76cm-suitcase-3217615
+                - listitem [ref=f151e1983]:
+                  - link [ref=f151e1984] [cursor=pointer]:
+                    - /url: /products/nere-venture-dual-open-76cm-suitcase-3223834
+            - generic [ref=f151e1989]:
+              - link "Venture Dual Open 76cm Suitcase 40% OFF | TRAVEL DEALS FINAL DAYS Add To Bag Compare" [ref=f151e1990] [cursor=pointer]:
+                - /url: /products/nere-venture-dual-open-76cm-suitcase-3217612
+                - generic [ref=f151e1991]:
+                  - img "Venture Dual Open 76cm Suitcase" [ref=f151e1992]
+                  - generic:
+                    - generic:
+                      - generic: 40% OFF | TRAVEL DEALS
+                      - generic: FINAL DAYS
+                  - generic [ref=f151e1995]:
+                    - button "Add To Bag" [ref=f151e1996]
+                    - button "Compare" [ref=f151e1998]
+              - generic [ref=f151e1999]:
+                - generic [ref=f151e2000]:
+                  - generic [ref=f151e2001]: Nere
+                  - button [ref=f151e2002] [cursor=pointer]
+                - link [ref=f151e2004] [cursor=pointer]:
+                  - /url: /products/nere-venture-dual-open-76cm-suitcase-3217612
+                  - heading "Venture Dual Open 76cm Suitcase" [level=3] [ref=f151e2005]
+              - generic [ref=f151e2008]:
+                - generic [ref=f151e2009]: $299.00
+                - generic [ref=f151e2010]: $179.40
+              - list [ref=f151e2011]:
+                - listitem [ref=f151e2012]:
+                  - link [ref=f151e2013] [cursor=pointer]:
+                    - /url: /products/nere-venture-dual-open-76cm-suitcase-3215810
+                - listitem [ref=f151e2014]:
+                  - link [ref=f151e2015] [cursor=pointer]:
+                    - /url: /products/nere-venture-dual-open-76cm-suitcase-3222030
+                - listitem [ref=f151e2016]:
+                  - link [ref=f151e2017] [cursor=pointer]:
+                    - /url: /products/nere-venture-dual-open-76cm-suitcase-3217612
+                - listitem [ref=f151e2018]:
+                  - link [ref=f151e2019] [cursor=pointer]:
+                    - /url: /products/nere-venture-dual-open-76cm-suitcase-3228938
+                - listitem [ref=f151e2020]:
+                  - link [ref=f151e2021] [cursor=pointer]:
+                    - /url: /products/nere-venture-dual-open-76cm-suitcase-3217615
+                - listitem [ref=f151e2022]:
+                  - link [ref=f151e2023] [cursor=pointer]:
+                    - /url: /products/nere-venture-dual-open-76cm-suitcase-3223834
+            - generic [ref=f151e2028]:
+              - link [ref=f151e2029] [cursor=pointer]:
+                - /url: /products/nere-stori-check-in-75cm-suitcase-3208386
+                - generic [ref=f151e2030]:
+                  - img "Stori Check-In 75cm Suitcase" [ref=f151e2031]
+                  - img "Stori Check-In 75cm Suitcase" [ref=f151e2032]
+                  - generic:
+                    - generic:
+                      - generic: 40% OFF | TRAVEL DEALS
+                      - generic: FINAL DAYS
+                  - generic [ref=f151e2033]:
+                    - button "Add To Bag" [ref=f151e2034]
+                    - button "Compare" [ref=f151e2036]
+              - generic [ref=f151e2037]:
+                - generic [ref=f151e2038]:
+                  - generic [ref=f151e2039]: Nere
+                  - button [ref=f151e2040] [cursor=pointer]
+                - link [ref=f151e2042] [cursor=pointer]:
+                  - /url: /products/nere-stori-check-in-75cm-suitcase-3208386
+                  - heading "Stori Check-In 75cm Suitcase" [level=3] [ref=f151e2043]
+              - generic [ref=f151e2046]:
+                - generic [ref=f151e2047]: $269.00
+                - generic [ref=f151e2048]: $161.40
+              - list [ref=f151e2049]:
+                - listitem [ref=f151e2050]:
+                  - link [ref=f151e2051] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3204720
+                - listitem [ref=f151e2052]:
+                  - link [ref=f151e2053] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3227442
+                - listitem [ref=f151e2054]:
+                  - link [ref=f151e2055] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3212099
+                - listitem [ref=f151e2056]:
+                  - link [ref=f151e2057] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3225896
+                - listitem [ref=f151e2058]:
+                  - link [ref=f151e2059] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3225884
+                - listitem [ref=f151e2060]:
+                  - link [ref=f151e2061] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3230373
+                - listitem [ref=f151e2062]:
+                  - link [ref=f151e2063] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3227450
+                - listitem [ref=f151e2064]:
+                  - link [ref=f151e2065] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3228914
+                - listitem [ref=f151e2066]:
+                  - link [ref=f151e2067] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3227458
+                - listitem [ref=f151e2068]:
+                  - link [ref=f151e2069] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3228910
+                - listitem [ref=f151e2070]:
+                  - link [ref=f151e2071] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3228906
+                - listitem [ref=f151e2072]:
+                  - link [ref=f151e2073] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3208386
+                - listitem [ref=f151e2074]:
+                  - link [ref=f151e2075] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3225888
+            - generic [ref=f151e2080]:
+              - link [ref=f151e2081] [cursor=pointer]:
+                - /url: /products/nere-venture-dual-open-3pc-suitcase-set-3222033
+                - generic [ref=f151e2082]:
+                  - img "Venture Dual Open 3pc Suitcase Set" [ref=f151e2083]
+                  - img "Venture Dual Open 3pc Suitcase Set" [ref=f151e2084]
+                  - generic: BUY A SET & SAVE
+                  - generic [ref=f151e2085]:
+                    - button "Add To Bag" [ref=f151e2086]
+                    - button "Compare" [ref=f151e2088]
+              - generic [ref=f151e2089]:
+                - generic [ref=f151e2090]:
+                  - generic [ref=f151e2091]: Nere
+                  - button [ref=f151e2092] [cursor=pointer]
+                - link [ref=f151e2094] [cursor=pointer]:
+                  - /url: /products/nere-venture-dual-open-3pc-suitcase-set-3222033
+                  - heading "Venture Dual Open 3pc Suitcase Set" [level=3] [ref=f151e2095]
+              - generic [ref=f151e2098]:
+                - generic [ref=f151e2099]: $827.00
+                - generic [ref=f151e2100]: $479.00
+              - list [ref=f151e2101]:
+                - listitem [ref=f151e2102]:
+                  - link [ref=f151e2103] [cursor=pointer]:
+                    - /url: /products/nere-venture-dual-open-3pc-suitcase-set-3222033
+                - listitem [ref=f151e2104]:
+                  - link [ref=f151e2105] [cursor=pointer]:
+                    - /url: /products/nere-venture-dual-open-3pc-suitcase-set-3217624
+                - listitem [ref=f151e2106]:
+                  - link [ref=f151e2107] [cursor=pointer]:
+                    - /url: /products/nere-venture-dual-open-3pc-suitcase-set-3225252
+                - listitem [ref=f151e2108]:
+                  - link [ref=f151e2109] [cursor=pointer]:
+                    - /url: /products/nere-venture-dual-open-3pc-suitcase-set-3217625
+            - generic [ref=f151e2114]:
+              - link "Nomad 2 Compartment Tote RFID Bag Add To Bag" [ref=f151e2115] [cursor=pointer]:
+                - /url: /products/nere-nomad-2-compartment-tote-rfid-bag-3227496
+                - generic [ref=f151e2116]:
+                  - img "Nomad 2 Compartment Tote RFID Bag" [ref=f151e2117]
+                  - button "Add To Bag" [ref=f151e2121]
+              - generic [ref=f151e2123]:
+                - generic [ref=f151e2124]:
+                  - generic [ref=f151e2125]: Nere
+                  - button [ref=f151e2126] [cursor=pointer]
+                - link [ref=f151e2128] [cursor=pointer]:
+                  - /url: /products/nere-nomad-2-compartment-tote-rfid-bag-3227496
+                  - heading "Nomad 2 Compartment Tote RFID Bag" [level=3] [ref=f151e2129]
+              - generic [ref=f151e2130]: $139.00
+              - list [ref=f151e2134]:
+                - listitem [ref=f151e2135]:
+                  - link [ref=f151e2136] [cursor=pointer]:
+                    - /url: /products/nere-nomad-2-compartment-tote-rfid-bag-3227485
+                - listitem [ref=f151e2137]:
+                  - link [ref=f151e2138] [cursor=pointer]:
+                    - /url: /products/nere-nomad-2-compartment-tote-rfid-bag-3228738
+            - generic [ref=f151e2143]:
+              - link [ref=f151e2144] [cursor=pointer]:
+                - /url: /products/nere-stori-3pc-suitcase-set-3225891
+                - generic [ref=f151e2145]:
+                  - img "Stori 3pc Suitcase Set" [ref=f151e2146]
+                  - img "Stori 3pc Suitcase Set" [ref=f151e2147]
+                  - generic: BUY A SET & SAVE
+                  - generic [ref=f151e2148]:
+                    - button "Add To Bag" [ref=f151e2149]
+                    - button "Compare" [ref=f151e2151]
+              - generic [ref=f151e2152]:
+                - generic [ref=f151e2153]:
+                  - generic [ref=f151e2154]: Nere
+                  - button [ref=f151e2155] [cursor=pointer]
+                - link [ref=f151e2157] [cursor=pointer]:
+                  - /url: /products/nere-stori-3pc-suitcase-set-3225891
+                  - heading "Stori 3pc Suitcase Set" [level=3] [ref=f151e2158]
+              - generic [ref=f151e2161]:
+                - generic [ref=f151e2162]: $747.00
+                - generic [ref=f151e2163]: $429.00
+              - list [ref=f151e2164]:
+                - listitem [ref=f151e2165]:
+                  - link [ref=f151e2166] [cursor=pointer]:
+                    - /url: /products/nere-stori-3pc-suitcase-set-3225899
+                - listitem [ref=f151e2167]:
+                  - link [ref=f151e2168] [cursor=pointer]:
+                    - /url: /products/nere-stori-3pc-suitcase-set-3225887
+                - listitem [ref=f151e2169]:
+                  - link [ref=f151e2170] [cursor=pointer]:
+                    - /url: /products/nere-stori-3pc-suitcase-set-3225891
+                - listitem [ref=f151e2171]:
+                  - link [ref=f151e2172] [cursor=pointer]:
+                    - /url: /products/nere-stori-3pc-suitcase-set-3220218
+            - generic [ref=f151e2177]:
+              - link "Venture Dual Open 76cm Suitcase 40% OFF | TRAVEL DEALS FINAL DAYS Add To Bag Compare" [ref=f151e2178] [cursor=pointer]:
+                - /url: /products/nere-venture-dual-open-76cm-suitcase-3222030
+                - generic [ref=f151e2179]:
+                  - img "Venture Dual Open 76cm Suitcase" [ref=f151e2180]
+                  - generic:
+                    - generic:
+                      - generic: 40% OFF | TRAVEL DEALS
+                      - generic: FINAL DAYS
+                  - generic [ref=f151e2183]:
+                    - button "Add To Bag" [ref=f151e2184]
+                    - button "Compare" [ref=f151e2186]
+              - generic [ref=f151e2187]:
+                - generic [ref=f151e2188]:
+                  - generic [ref=f151e2189]: Nere
+                  - button [ref=f151e2190] [cursor=pointer]
+                - link [ref=f151e2192] [cursor=pointer]:
+                  - /url: /products/nere-venture-dual-open-76cm-suitcase-3222030
+                  - heading "Venture Dual Open 76cm Suitcase" [level=3] [ref=f151e2193]
+              - generic [ref=f151e2196]:
+                - generic [ref=f151e2197]: $299.00
+                - generic [ref=f151e2198]: $179.40
+              - list [ref=f151e2199]:
+                - listitem [ref=f151e2200]:
+                  - link [ref=f151e2201] [cursor=pointer]:
+                    - /url: /products/nere-venture-dual-open-76cm-suitcase-3215810
+                - listitem [ref=f151e2202]:
+                  - link [ref=f151e2203] [cursor=pointer]:
+                    - /url: /products/nere-venture-dual-open-76cm-suitcase-3222030
+                - listitem [ref=f151e2204]:
+                  - link [ref=f151e2205] [cursor=pointer]:
+                    - /url: /products/nere-venture-dual-open-76cm-suitcase-3217612
+                - listitem [ref=f151e2206]:
+                  - link [ref=f151e2207] [cursor=pointer]:
+                    - /url: /products/nere-venture-dual-open-76cm-suitcase-3228938
+                - listitem [ref=f151e2208]:
+                  - link [ref=f151e2209] [cursor=pointer]:
+                    - /url: /products/nere-venture-dual-open-76cm-suitcase-3217615
+                - listitem [ref=f151e2210]:
+                  - link [ref=f151e2211] [cursor=pointer]:
+                    - /url: /products/nere-venture-dual-open-76cm-suitcase-3223834
+            - generic [ref=f151e2216]:
+              - link [ref=f151e2217] [cursor=pointer]:
+                - /url: /products/nere-nomad-carry-on-43l-dual-bag-3227488
+                - generic [ref=f151e2218]:
+                  - img "Nomad Carry-On 43L Dual Bag" [ref=f151e2219]
+                  - img "Nomad Carry-On 43L Dual Bag" [ref=f151e2220]
+                  - generic:
+                    - generic:
+                      - generic: 40% OFF | TRAVEL DEALS
+                      - generic: FINAL DAYS
+                  - generic [ref=f151e2221]:
+                    - button "Add To Bag" [ref=f151e2222]
+                    - button "Compare" [ref=f151e2224]
+              - generic [ref=f151e2225]:
+                - generic [ref=f151e2226]:
+                  - generic [ref=f151e2227]: Nere
+                  - button [ref=f151e2228] [cursor=pointer]
+                - link [ref=f151e2230] [cursor=pointer]:
+                  - /url: /products/nere-nomad-carry-on-43l-dual-bag-3227488
+                  - heading "Nomad Carry-On 43L Dual Bag" [level=3] [ref=f151e2231]
+              - generic [ref=f151e2234]:
+                - generic [ref=f151e2235]: $219.00
+                - generic [ref=f151e2236]: $131.40
+              - list [ref=f151e2237]:
+                - listitem [ref=f151e2238]:
+                  - link [ref=f151e2239] [cursor=pointer]:
+                    - /url: /products/nere-nomad-carry-on-43l-dual-bag-3227488
+                - listitem [ref=f151e2240]:
+                  - link [ref=f151e2241] [cursor=pointer]:
+                    - /url: /products/nere-nomad-carry-on-43l-dual-bag-3227494
+            - generic [ref=f151e2246]:
+              - link [ref=f151e2247] [cursor=pointer]:
+                - /url: /products/nere-nomad-2-compartment-tote-rfid-bag-3227485
+                - generic [ref=f151e2248]:
+                  - img "Nomad 2 Compartment Tote RFID Bag" [ref=f151e2249]
+                  - img "Nomad 2 Compartment Tote RFID Bag" [ref=f151e2250]
+                  - button "Add To Bag" [ref=f151e2252]
+              - generic [ref=f151e2254]:
+                - generic [ref=f151e2255]:
+                  - generic [ref=f151e2256]: Nere
+                  - button [ref=f151e2257] [cursor=pointer]
+                - link [ref=f151e2259] [cursor=pointer]:
+                  - /url: /products/nere-nomad-2-compartment-tote-rfid-bag-3227485
+                  - heading "Nomad 2 Compartment Tote RFID Bag" [level=3] [ref=f151e2260]
+              - generic [ref=f151e2261]: $139.00
+              - list [ref=f151e2265]:
+                - listitem [ref=f151e2266]:
+                  - link [ref=f151e2267] [cursor=pointer]:
+                    - /url: /products/nere-nomad-2-compartment-tote-rfid-bag-3227485
+                - listitem [ref=f151e2268]:
+                  - link [ref=f151e2269] [cursor=pointer]:
+                    - /url: /products/nere-nomad-2-compartment-tote-rfid-bag-3228738
+            - generic [ref=f151e2274]:
+              - link [ref=f151e2275] [cursor=pointer]:
+                - /url: /products/nere-bondi-3pc-suitcase-set-3215818
+                - generic [ref=f151e2276]:
+                  - img "Bondi 3pc Suitcase Set" [ref=f151e2277]
+                  - img "Bondi 3pc Suitcase Set" [ref=f151e2278]
+                  - generic: BUY A SET & SAVE
+                  - generic [ref=f151e2279]:
+                    - button "Add To Bag" [ref=f151e2280]
+                    - button "Compare" [ref=f151e2282]
+              - generic [ref=f151e2283]:
+                - generic [ref=f151e2284]:
+                  - generic [ref=f151e2285]: Nere
+                  - button [ref=f151e2286] [cursor=pointer]
+                - link [ref=f151e2288] [cursor=pointer]:
+                  - /url: /products/nere-bondi-3pc-suitcase-set-3215818
+                  - heading "Bondi 3pc Suitcase Set" [level=3] [ref=f151e2289]
+              - generic [ref=f151e2292]:
+                - generic [ref=f151e2293]: $797.00
+                - generic [ref=f151e2294]: $459.00
+              - list [ref=f151e2295]:
+                - listitem [ref=f151e2296]:
+                  - link [ref=f151e2297] [cursor=pointer]:
+                    - /url: /products/nere-bondi-3pc-suitcase-set-3215818
+                - listitem [ref=f151e2298]:
+                  - link [ref=f151e2299] [cursor=pointer]:
+                    - /url: /products/nere-bondi-3pc-suitcase-set-3215822
+            - generic [ref=f151e2304]:
+              - link [ref=f151e2305] [cursor=pointer]:
+                - /url: /products/nere-venture-dual-open-76cm-suitcase-3223834
+                - generic [ref=f151e2306]:
+                  - img "Venture Dual Open 76cm Suitcase" [ref=f151e2307]
+                  - img "Venture Dual Open 76cm Suitcase" [ref=f151e2308]
+                  - generic:
+                    - generic:
+                      - generic: 40% OFF | TRAVEL DEALS
+                      - generic: FINAL DAYS
+                  - generic [ref=f151e2309]:
+                    - button "Add To Bag" [ref=f151e2310]
+                    - button "Compare" [ref=f151e2312]
+              - generic [ref=f151e2313]:
+                - generic [ref=f151e2314]:
+                  - generic [ref=f151e2315]: Nere
+                  - button [ref=f151e2316] [cursor=pointer]
+                - link [ref=f151e2318] [cursor=pointer]:
+                  - /url: /products/nere-venture-dual-open-76cm-suitcase-3223834
+                  - heading "Venture Dual Open 76cm Suitcase" [level=3] [ref=f151e2319]
+              - generic [ref=f151e2322]:
+                - generic [ref=f151e2323]: $299.00
+                - generic [ref=f151e2324]: $179.40
+              - list [ref=f151e2325]:
+                - listitem [ref=f151e2326]:
+                  - link [ref=f151e2327] [cursor=pointer]:
+                    - /url: /products/nere-venture-dual-open-76cm-suitcase-3215810
+                - listitem [ref=f151e2328]:
+                  - link [ref=f151e2329] [cursor=pointer]:
+                    - /url: /products/nere-venture-dual-open-76cm-suitcase-3222030
+                - listitem [ref=f151e2330]:
+                  - link [ref=f151e2331] [cursor=pointer]:
+                    - /url: /products/nere-venture-dual-open-76cm-suitcase-3217612
+                - listitem [ref=f151e2332]:
+                  - link [ref=f151e2333] [cursor=pointer]:
+                    - /url: /products/nere-venture-dual-open-76cm-suitcase-3228938
+                - listitem [ref=f151e2334]:
+                  - link [ref=f151e2335] [cursor=pointer]:
+                    - /url: /products/nere-venture-dual-open-76cm-suitcase-3217615
+                - listitem [ref=f151e2336]:
+                  - link [ref=f151e2337] [cursor=pointer]:
+                    - /url: /products/nere-venture-dual-open-76cm-suitcase-3223834
+            - generic [ref=f151e2342]:
+              - link "Venture Dual Open 66cm Suitcase 40% OFF | TRAVEL DEALS FINAL DAYS Add To Bag Compare" [ref=f151e2343] [cursor=pointer]:
+                - /url: /products/nere-venture-dual-open-66cm-suitcase-3222031
+                - generic [ref=f151e2344]:
+                  - img "Venture Dual Open 66cm Suitcase" [ref=f151e2345]
+                  - generic:
+                    - generic:
+                      - generic: 40% OFF | TRAVEL DEALS
+                      - generic: FINAL DAYS
+                  - generic [ref=f151e2348]:
+                    - button "Add To Bag" [ref=f151e2349]
+                    - button "Compare" [ref=f151e2351]
+              - generic [ref=f151e2352]:
+                - generic [ref=f151e2353]:
+                  - generic [ref=f151e2354]: Nere
+                  - button [ref=f151e2355] [cursor=pointer]
+                - link [ref=f151e2357] [cursor=pointer]:
+                  - /url: /products/nere-venture-dual-open-66cm-suitcase-3222031
+                  - heading "Venture Dual Open 66cm Suitcase" [level=3] [ref=f151e2358]
+              - generic [ref=f151e2361]:
+                - generic [ref=f151e2362]: $279.00
+                - generic [ref=f151e2363]: $167.40
+              - list [ref=f151e2364]:
+                - listitem [ref=f151e2365]:
+                  - link [ref=f151e2366] [cursor=pointer]:
+                    - /url: /products/nere-venture-dual-open-66cm-suitcase-3215811
+                - listitem [ref=f151e2367]:
+                  - link [ref=f151e2368] [cursor=pointer]:
+                    - /url: /products/nere-venture-dual-open-66cm-suitcase-3222031
+                - listitem [ref=f151e2369]:
+                  - link [ref=f151e2370] [cursor=pointer]:
+                    - /url: /products/nere-venture-dual-open-66cm-suitcase-3217613
+                - listitem [ref=f151e2371]:
+                  - link [ref=f151e2372] [cursor=pointer]:
+                    - /url: /products/nere-venture-dual-open-66cm-suitcase-3228939
+                - listitem [ref=f151e2373]:
+                  - link [ref=f151e2374] [cursor=pointer]:
+                    - /url: /products/nere-venture-dual-open-66cm-suitcase-3217616
+                - listitem [ref=f151e2375]:
+                  - link [ref=f151e2376] [cursor=pointer]:
+                    - /url: /products/nere-venture-dual-open-66cm-suitcase-3223833
+            - generic [ref=f151e2381]:
+              - link [ref=f151e2382] [cursor=pointer]:
+                - /url: /products/nere-bondi-check-in-80cm-suitcase-3215749
+                - generic [ref=f151e2383]:
+                  - img "Bondi Check-In 80cm Suitcase" [ref=f151e2384]
+                  - img "Bondi Check-In 80cm Suitcase" [ref=f151e2385]
+                  - generic:
+                    - generic:
+                      - generic: 40% OFF | TRAVEL DEALS
+                      - generic: FINAL DAYS
+                  - generic [ref=f151e2386]:
+                    - button "Add To Bag" [ref=f151e2387]
+                    - button "Compare" [ref=f151e2389]
+              - generic [ref=f151e2390]:
+                - generic [ref=f151e2391]:
+                  - generic [ref=f151e2392]: Nere
+                  - button [ref=f151e2393] [cursor=pointer]
+                - link [ref=f151e2395] [cursor=pointer]:
+                  - /url: /products/nere-bondi-check-in-80cm-suitcase-3215749
+                  - heading "Bondi Check-In 80cm Suitcase" [level=3] [ref=f151e2396]
+              - generic [ref=f151e2399]:
+                - generic [ref=f151e2400]: $289.00
+                - generic [ref=f151e2401]: $173.40
+              - list [ref=f151e2402]:
+                - listitem [ref=f151e2403]:
+                  - link [ref=f151e2404] [cursor=pointer]:
+                    - /url: /products/nere-bondi-check-in-80cm-suitcase-3215749
+                - listitem [ref=f151e2405]:
+                  - link [ref=f151e2406] [cursor=pointer]:
+                    - /url: /products/nere-bondi-check-in-80cm-suitcase-3227462
+                - listitem [ref=f151e2407]:
+                  - link [ref=f151e2408] [cursor=pointer]:
+                    - /url: /products/nere-bondi-check-in-80cm-suitcase-3215761
+            - generic [ref=f151e2413]:
+              - link "Venture Dual Open 56cm Suitcase 40% OFF | TRAVEL DEALS FINAL DAYS Add To Bag Compare" [ref=f151e2414] [cursor=pointer]:
+                - /url: /products/nere-venture-dual-open-56cm-suitcase-3222032
+                - generic [ref=f151e2415]:
+                  - img "Venture Dual Open 56cm Suitcase" [ref=f151e2416]
+                  - generic:
+                    - generic:
+                      - generic: 40% OFF | TRAVEL DEALS
+                      - generic: FINAL DAYS
+                  - generic [ref=f151e2419]:
+                    - button "Add To Bag" [ref=f151e2420]
+                    - button "Compare" [ref=f151e2422]
+              - generic [ref=f151e2423]:
+                - generic [ref=f151e2424]:
+                  - generic [ref=f151e2425]: Nere
+                  - button [ref=f151e2426] [cursor=pointer]
+                - link [ref=f151e2428] [cursor=pointer]:
+                  - /url: /products/nere-venture-dual-open-56cm-suitcase-3222032
+                  - heading "Venture Dual Open 56cm Suitcase" [level=3] [ref=f151e2429]
+              - generic [ref=f151e2432]:
+                - generic [ref=f151e2433]: $249.00
+                - generic [ref=f151e2434]: $149.40
+              - list [ref=f151e2435]:
+                - listitem [ref=f151e2436]:
+                  - link [ref=f151e2437] [cursor=pointer]:
+                    - /url: /products/nere-venture-dual-open-56cm-suitcase-3215812
+                - listitem [ref=f151e2438]:
+                  - link [ref=f151e2439] [cursor=pointer]:
+                    - /url: /products/nere-venture-dual-open-56cm-suitcase-3222032
+                - listitem [ref=f151e2440]:
+                  - link [ref=f151e2441] [cursor=pointer]:
+                    - /url: /products/nere-venture-dual-open-56cm-suitcase-3217614
+                - listitem [ref=f151e2442]:
+                  - link [ref=f151e2443] [cursor=pointer]:
+                    - /url: /products/nere-venture-dual-open-56cm-suitcase-3228940
+                - listitem [ref=f151e2444]:
+                  - link [ref=f151e2445] [cursor=pointer]:
+                    - /url: /products/nere-venture-dual-open-56cm-suitcase-3217617
+                - listitem [ref=f151e2446]:
+                  - link [ref=f151e2447] [cursor=pointer]:
+                    - /url: /products/nere-venture-dual-open-56cm-suitcase-3223832
+            - generic [ref=f151e2452]:
+              - link [ref=f151e2453] [cursor=pointer]:
+                - /url: /products/nere-stori-check-in-75cm-suitcase-3212099
+                - generic [ref=f151e2454]:
+                  - img "Stori Check-In 75cm Suitcase" [ref=f151e2455]
+                  - img "Stori Check-In 75cm Suitcase" [ref=f151e2456]
+                  - generic:
+                    - generic:
+                      - generic: 50% OFF | TRAVEL DEALS
+                      - generic: FINAL DAYS
+                  - generic [ref=f151e2457]:
+                    - button "Add To Bag" [ref=f151e2458]
+                    - button "Compare" [ref=f151e2460]
+              - generic [ref=f151e2461]:
+                - generic [ref=f151e2462]:
+                  - generic [ref=f151e2463]: Nere
+                  - button [ref=f151e2464] [cursor=pointer]
+                - link [ref=f151e2466] [cursor=pointer]:
+                  - /url: /products/nere-stori-check-in-75cm-suitcase-3212099
+                  - heading "Stori Check-In 75cm Suitcase" [level=3] [ref=f151e2467]
+              - generic [ref=f151e2470]:
+                - generic [ref=f151e2471]: $269.00
+                - generic [ref=f151e2472]: $161.40
+                - generic [ref=f151e2473]: $134.50
+              - list [ref=f151e2474]:
+                - listitem [ref=f151e2475]:
+                  - link [ref=f151e2476] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3204720
+                - listitem [ref=f151e2477]:
+                  - link [ref=f151e2478] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3227442
+                - listitem [ref=f151e2479]:
+                  - link [ref=f151e2480] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3212099
+                - listitem [ref=f151e2481]:
+                  - link [ref=f151e2482] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3225896
+                - listitem [ref=f151e2483]:
+                  - link [ref=f151e2484] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3225884
+                - listitem [ref=f151e2485]:
+                  - link [ref=f151e2486] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3230373
+                - listitem [ref=f151e2487]:
+                  - link [ref=f151e2488] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3227450
+                - listitem [ref=f151e2489]:
+                  - link [ref=f151e2490] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3228914
+                - listitem [ref=f151e2491]:
+                  - link [ref=f151e2492] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3227458
+                - listitem [ref=f151e2493]:
+                  - link [ref=f151e2494] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3228910
+                - listitem [ref=f151e2495]:
+                  - link [ref=f151e2496] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3228906
+                - listitem [ref=f151e2497]:
+                  - link [ref=f151e2498] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3208386
+                - listitem [ref=f151e2499]:
+                  - link [ref=f151e2500] [cursor=pointer]:
+                    - /url: /products/nere-stori-check-in-75cm-suitcase-3225888
+            - generic [ref=f151e2505]:
+              - link [ref=f151e2506] [cursor=pointer]:
+                - /url: /products/nere-stori-3pc-suitcase-set-3225899
+                - generic [ref=f151e2507]:
+                  - img "Stori 3pc Suitcase Set" [ref=f151e2508]
+                  - img "Stori 3pc Suitcase Set" [ref=f151e2509]
+                  - generic: BUY A SET & SAVE
+                  - generic [ref=f151e2510]:
+                    - button "Add To Bag" [ref=f151e2511]
+                    - button "Compare" [ref=f151e2513]
+              - generic [ref=f151e2514]:
+                - generic [ref=f151e2515]:
+                  - generic [ref=f151e2516]: Nere
+                  - button [ref=f151e2517] [cursor=pointer]
+                - link [ref=f151e2519] [cursor=pointer]:
+                  - /url: /products/nere-stori-3pc-suitcase-set-3225899
+                  - heading "Stori 3pc Suitcase Set" [level=3] [ref=f151e2520]
+              - generic [ref=f151e2523]:
+                - generic [ref=f151e2524]: $690.00
+                - generic [ref=f151e2525]: $429.00
+              - list [ref=f151e2526]:
+                - listitem [ref=f151e2527]:
+                  - link [ref=f151e2528] [cursor=pointer]:
+                    - /url: /products/nere-stori-3pc-suitcase-set-3225899
+                - listitem [ref=f151e2529]:
+                  - link [ref=f151e2530] [cursor=pointer]:
+                    - /url: /products/nere-stori-3pc-suitcase-set-3225887
+                - listitem [ref=f151e2531]:
+                  - link [ref=f151e2532] [cursor=pointer]:
+                    - /url: /products/nere-stori-3pc-suitcase-set-3225891
+                - listitem [ref=f151e2533]:
+                  - link [ref=f151e2534] [cursor=pointer]:
+                    - /url: /products/nere-stori-3pc-suitcase-set-3220218
+            - generic [ref=f151e2539]:
+              - link "Venture Dual Open 66cm Suitcase 40% OFF | TRAVEL DEALS FINAL DAYS Add To Bag Compare" [ref=f151e2540] [cursor=pointer]:
+                - /url: /products/nere-venture-dual-open-66cm-suitcase-3215811
+                - generic [ref=f151e2541]:
+                  - img "Venture Dual Open 66cm Suitcase" [ref=f151e2542]
+                  - generic:
+                    - generic:
+                      - generic: 40% OFF | TRAVEL DEALS
+                      - generic: FINAL DAYS
+                  - generic [ref=f151e2545]:
+                    - button "Add To Bag" [ref=f151e2546]
+                    - button "Compare" [ref=f151e2548]
+              - generic [ref=f151e2549]:
+                - generic [ref=f151e2550]:
+                  - generic [ref=f151e2551]: Nere
+                  - button [ref=f151e2552] [cursor=pointer]
+                - link [ref=f151e2554] [cursor=pointer]:
+                  - /url: /products/nere-venture-dual-open-66cm-suitcase-3215811
+                  - heading "Venture Dual Open 66cm Suitcase" [level=3] [ref=f151e2555]
+              - generic [ref=f151e2558]:
+                - generic [ref=f151e2559]: $279.00
+                - generic [ref=f151e2560]: $167.40
+              - list [ref=f151e2561]:
+                - listitem [ref=f151e2562]:
+                  - link [ref=f151e2563] [cursor=pointer]:
+                    - /url: /products/nere-venture-dual-open-66cm-suitcase-3215811
+                - listitem [ref=f151e2564]:
+                  - link [ref=f151e2565] [cursor=pointer]:
+                    - /url: /products/nere-venture-dual-open-66cm-suitcase-3222031
+                - listitem [ref=f151e2566]:
+                  - link [ref=f151e2567] [cursor=pointer]:
+                    - /url: /products/nere-venture-dual-open-66cm-suitcase-3217613
+                - listitem [ref=f151e2568]:
+                  - link [ref=f151e2569] [cursor=pointer]:
+                    - /url: /products/nere-venture-dual-open-66cm-suitcase-3228939
+                - listitem [ref=f151e2570]:
+                  - link [ref=f151e2571] [cursor=pointer]:
+                    - /url: /products/nere-venture-dual-open-66cm-suitcase-3217616
+                - listitem [ref=f151e2572]:
+                  - link [ref=f151e2573] [cursor=pointer]:
+                    - /url: /products/nere-venture-dual-open-66cm-suitcase-3223833
+            - generic [ref=f151e2578]:
+              - link "Venture Dual Open 56cm Suitcase 40% OFF | TRAVEL DEALS FINAL DAYS Add To Bag Compare" [ref=f151e2579] [cursor=pointer]:
+                - /url: /products/nere-venture-dual-open-56cm-suitcase-3215812
+                - generic [ref=f151e2580]:
+                  - img "Venture Dual Open 56cm Suitcase" [ref=f151e2581]
+                  - generic:
+                    - generic:
+                      - generic: 40% OFF | TRAVEL DEALS
+                      - generic: FINAL DAYS
+                  - generic [ref=f151e2584]:
+                    - button "Add To Bag" [ref=f151e2585]
+                    - button "Compare" [ref=f151e2587]
+              - generic [ref=f151e2588]:
+                - generic [ref=f151e2589]:
+                  - generic [ref=f151e2590]: Nere
+                  - button [ref=f151e2591] [cursor=pointer]
+                - link [ref=f151e2593] [cursor=pointer]:
+                  - /url: /products/nere-venture-dual-open-56cm-suitcase-3215812
+                  - heading "Venture Dual Open 56cm Suitcase" [level=3] [ref=f151e2594]
+              - generic [ref=f151e2597]:
+                - generic [ref=f151e2598]: $249.00
+                - generic [ref=f151e2599]: $149.40
+              - list [ref=f151e2600]:
+                - listitem [ref=f151e2601]:
+                  - link [ref=f151e2602] [cursor=pointer]:
+                    - /url: /products/nere-venture-dual-open-56cm-suitcase-3215812
+                - listitem [ref=f151e2603]:
+                  - link [ref=f151e2604] [cursor=pointer]:
+                    - /url: /products/nere-venture-dual-open-56cm-suitcase-3222032
+                - listitem [ref=f151e2605]:
+                  - link [ref=f151e2606] [cursor=pointer]:
+                    - /url: /products/nere-venture-dual-open-56cm-suitcase-3217614
+                - listitem [ref=f151e2607]:
+                  - link [ref=f151e2608] [cursor=pointer]:
+                    - /url: /products/nere-venture-dual-open-56cm-suitcase-3228940
+                - listitem [ref=f151e2609]:
+                  - link [ref=f151e2610] [cursor=pointer]:
+                    - /url: /products/nere-venture-dual-open-56cm-suitcase-3217617
+                - listitem [ref=f151e2611]:
+                  - link [ref=f151e2612] [cursor=pointer]:
+                    - /url: /products/nere-venture-dual-open-56cm-suitcase-3223832
+  - contentinfo [ref=f151e2615]:
+    - generic [ref=f151e2619]:
+      - heading "Sign up & receive 10% off your first full price purchase*" [level=4] [ref=f151e2620]
+      - link "Sign Up" [ref=f151e2621] [cursor=pointer]:
+        - /url: /account/register
+    - generic [ref=f151e2624]:
+      - generic [ref=f151e2625]:
+        - generic:
+          - generic:
+            - heading "Shop" [level=3]
+          - text: 
+        - navigation [ref=f151e2628]:
+          - menu "footermenu" [ref=f151e2629]:
+            - menuitem "Handbags" [ref=f151e2630] [cursor=pointer]
+            - menuitem "Travel" [ref=f151e2631] [cursor=pointer]
+            - menuitem "Luggage Sets" [ref=f151e2632] [cursor=pointer]
+            - menuitem "Travel Bags" [ref=f151e2633] [cursor=pointer]
+            - menuitem "Women's" [ref=f151e2634] [cursor=pointer]
+            - menuitem "Men's" [ref=f151e2635] [cursor=pointer]
+            - menuitem "Backpacks" [ref=f151e2636] [cursor=pointer]
+            - menuitem "Wallets" [ref=f151e2637] [cursor=pointer]
+      - generic [ref=f151e2638]:
+        - generic:
+          - generic:
+            - heading "Customer Information" [level=3]
+          - text: 
+        - navigation [ref=f151e2641]:
+          - menu "footermenu" [ref=f151e2642]:
+            - menuitem "Deliveries & Returns" [ref=f151e2643] [cursor=pointer]
+            - menuitem "Track My Order" [ref=f151e2644] [cursor=pointer]
+            - menuitem "Strand E-Gift Card" [ref=f151e2645] [cursor=pointer]
+            - menuitem "Student Discount" [ref=f151e2646] [cursor=pointer]
+            - menuitem "Canstar Award Winning Travel" [ref=f151e2647] [cursor=pointer]
+            - menuitem "FAQs" [ref=f151e2648] [cursor=pointer]
+            - menuitem "Corporate Orders" [ref=f151e2649] [cursor=pointer]
+            - menuitem "Zip Pay" [ref=f151e2650] [cursor=pointer]
+            - menuitem "TSA Locks" [ref=f151e2651] [cursor=pointer]
+      - generic [ref=f151e2652]:
+        - generic:
+          - generic:
+            - heading "About Strand" [level=3]
+          - text: 
+        - navigation [ref=f151e2655]:
+          - menu "footermenu" [ref=f151e2656]:
+            - menuitem "Join Our Team" [ref=f151e2657] [cursor=pointer]
+            - menuitem "Store Locator" [ref=f151e2658] [cursor=pointer]
+            - menuitem "Support" [ref=f151e2659] [cursor=pointer]
+            - menuitem "About Us" [ref=f151e2660] [cursor=pointer]
+            - menuitem "Contact Us" [ref=f151e2661] [cursor=pointer]
+            - menuitem "Careers" [ref=f151e2662] [cursor=pointer]
+            - menuitem "The Strand Journal" [ref=f151e2663] [cursor=pointer]
+            - menuitem "Reviews" [ref=f151e2664] [cursor=pointer]
+            - menuitem "AI Info" [ref=f151e2665] [cursor=pointer]
+      - generic [ref=f151e2666]:
+        - generic:
+          - generic:
+            - heading "Strand+ Loyalty Program" [level=3]
+          - text: 
+        - navigation [ref=f151e2669]:
+          - menu "footermenu" [ref=f151e2670]:
+            - menuitem "Join Our Loyalty Program" [ref=f151e2671] [cursor=pointer]
+            - menuitem "My Account" [ref=f151e2672] [cursor=pointer]
+            - menuitem "Loyalty Terms & Conditions" [ref=f151e2673] [cursor=pointer]
+      - generic [ref=f151e2674]:
+        - generic:
+          - generic:
+            - heading "Our Policies" [level=3]
+          - text: 
+        - navigation [ref=f151e2677]:
+          - menu "footermenu" [ref=f151e2678]:
+            - menuitem "Positive Impact Statement" [ref=f151e2679] [cursor=pointer]
+            - menuitem "Terms and Conditions" [ref=f151e2680] [cursor=pointer]
+            - menuitem "Terms of Trade" [ref=f151e2681] [cursor=pointer]
+            - menuitem "Privacy Statement" [ref=f151e2682] [cursor=pointer]
+            - menuitem "Price Match Policy" [ref=f151e2683] [cursor=pointer]
+    - generic [ref=f151e2684]:
+      - list [ref=f151e2688]:
+        - listitem [ref=f151e2689]:
+          - link "Facebook" [ref=f151e2690] [cursor=pointer]:
+            - /url: https://www.facebook.com/StrandbagsStores
+        - listitem [ref=f151e2692]:
+          - link "Instagram" [ref=f151e2693] [cursor=pointer]:
+            - /url: https://www.instagram.com/strandbags/
+        - listitem [ref=f151e2695]:
+          - link "LinkedIn" [ref=f151e2696] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/strandbags-group/
+      - generic [ref=f151e2699]:
+        - generic [ref=f151e2700]:
+          - generic [ref=f151e2701]: Payment methods accepted
+          - list [ref=f151e2702]:
+            - listitem [ref=f151e2703]:
+              - img "Visa" [ref=f151e2704]
+            - listitem [ref=f151e2705]:
+              - img "Mastercard" [ref=f151e2706]
+            - listitem [ref=f151e2707]:
+              - img "American Express" [ref=f151e2708]
+            - listitem [ref=f151e2709]:
+              - img "Paypal" [ref=f151e2710]
+            - listitem [ref=f151e2711]:
+              - img "Afterpay" [ref=f151e2712]
+            - listitem [ref=f151e2713]:
+              - img "Klarna" [ref=f151e2714]
+            - listitem [ref=f151e2715]:
+              - img "Zip" [ref=f151e2716]
+        - button "Back to Top" [ref=f151e2718] [cursor=pointer]
+        - generic [ref=f151e2720]: Strandbags Group Copyright 2026.
+  - region "Live chat"
+```
+
+# Test source
+
+```ts
+  32  |     this.cartPage = page.locator(".minicart-footer a").nth(1);
+  33  |     this.youMayAlsoLike = page.locator("#obv-hb-vVminV0J");
+  34  | 
+  35  |     this.emptymessage = page.locator(".minicart-body__empty");
+  36  |     this.removeItemTitle = page.locator(".removed-item__name");
+  37  |     this.quantityNumber = page.locator(".field--quantity input").first();
+  38  |     this.productCardCount = page.locator(".minicart-item");
+  39  |     this.undo = page.locator(".d-inline-block").last();
+  40  | 
+  41  |     
+  42  |     
+  43  | 
+  44  | 
+  45  | 
+  46  |    }
+  47  | 
+  48  |    async minicartLoadCorrectly(){
+  49  |     await expect(this.header).toBeVisible();
+  50  |     await expect(this.continueShopping).toBeVisible();
+  51  |     await expect(this.shippingBar).toBeVisible();
+  52  |     await expect(this.productCard).toBeVisible();
+  53  |     await expect(this.productVendor).toBeVisible();
+  54  |     await expect(this.productTitle).toBeVisible();
+  55  |     await expect(this.productPrice).toBeVisible();
+  56  |     await expect(this.productColor).toBeVisible();
+  57  |     await expect(this.wishlist).toBeVisible();
+  58  |     await expect(this.removeIcon).toBeVisible();
+  59  |     await expect(this.quantityPlus).toBeVisible();
+  60  |     await expect(this.quantityMinus).toBeVisible();
+  61  |     await expect(this.subTotal).toBeVisible();
+  62  |     await expect(this.afterplay).toBeVisible();
+  63  |     await expect(this.checkout).toBeVisible();
+  64  |     await expect(this.cartPage).toBeVisible();
+  65  |     await expect(this.youMayAlsoLike).toBeVisible();
+  66  |    
+  67  |    }
+  68  | 
+  69  |    async emptyState(){
+  70  | 
+  71  |     let trimsubtotal = "";
+  72  | 
+  73  |     await this.removeIcon.click();
+  74  |     await this.page.waitForTimeout(2000);
+  75  |     await this.removeIcon.click();
+  76  |     expect (await this.emptymessage.textContent()).toEqual("Your bag is empty.");
+  77  |     trimsubtotal = await this.subTotal.textContent();
+  78  |     expect (trimsubtotal.trim()).toEqual("$0.00");
+  79  | 
+  80  | 
+  81  |    }
+  82  | 
+  83  |    async removeProduct(){
+  84  | 
+  85  |     let productname  = "";
+  86  |     
+  87  |     await this.header.waitFor()
+  88  |     productname = await this.productTitle.textContent();
+  89  |     await this.removeIcon.click();
+  90  |     expect (await this.removeItemTitle.textContent()).toEqual(productname)
+  91  | 
+  92  |    }
+  93  | 
+  94  |    async quantityController(){
+  95  | 
+  96  |     let subtotalbefore = "";
+  97  |     let subtotalafter = "";
+  98  |     let finalsubbefore = "";
+  99  |     let finalsubafter = "";
+  100 | 
+  101 |     await this.page.waitForTimeout(3000);
+  102 |     subtotalbefore = await this.subTotal.textContent();
+  103 |     await this.quantityPlus.click();
+  104 |     await this.page.waitForTimeout(3000);
+  105 |     subtotalafter = await this.subTotal.textContent();
+  106 | 
+  107 |     finalsubbefore = parseFloat(subtotalbefore.replace("$", "").trim());
+  108 |     finalsubafter = parseFloat(subtotalafter.replace("$", "").trim());
+  109 | 
+  110 |     await expect(finalsubafter).toBeGreaterThan(finalsubbefore);
+  111 | 
+  112 | 
+  113 |    }
+  114 | 
+  115 |    async Undo(){
+  116 | 
+  117 |     let productCardCount = "";
+  118 |    
+  119 |     
+  120 |     await this.header.waitFor()
+  121 |     await this.removeIcon.click();
+  122 | 
+  123 |     await this.page.waitForTimeout(3000);
+  124 | 
+  125 |     await this.undo.click();
+  126 | 
+  127 |     await this.page.waitForTimeout(3000);
+  128 | 
+  129 | 
+  130 |     productCardCount = await this.productCardCount.count();
+  131 | 
+> 132 |     await expect (productCardCount).toEqual("1");
+      |                                     ^ Error: expect(received).toEqual(expected) // deep equality
+  133 | 
+  134 | 
+  135 | 
+  136 |     // productname = await this.productTitle.textContent();
+  137 |     // await this.removeIcon.click();
+  138 |     // expect (await this.removeItemTitle.textContent()).toEqual(productname)
+  139 | 
+  140 |    }
+  141 | 
+  142 | }
+```
